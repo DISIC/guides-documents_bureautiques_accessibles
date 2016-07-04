@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Guide &#171;&#160;Créer des documents bureautiques accessibles&#160;&#187;</title>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="css/styles.css" media="all">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+  <body>  
+<div class="main-header">
+	<div class="inside">
+		<ul class="skip-links">
+			<li><a href="#main">contenu</a></li>
+			<li><a href="#navigation">navigation</a></li>
+		</ul>
+		<header role="banner" class="header  clear" id="banner">
+			<h1 id="créer-des-documents-bureautiques-accessibles"> Créer des documents bureautiques accessibles</h1>
+		</header>
+		<nav role="navigation" class="gp-sommaire" id="navigation" aria-label="Sommaire du guide">
+			<button id="btnSommaire" aria-expanded="false">Sommaire</button>
+			<ul class="sommaire is-hidden" id="sommaireToggle">
+								
+				<li><a href="#introduction">Introduction</a>
+				<ul>
+				<li><a href="#avant-propos">Avant-propos</a></li>
+				<li><a href="#le-rgaa-et-les-documents-bureautiques">Le RGAA et les documents bureautiques</a></li>
+				<li><a href="#pr%C3%A9sentation-des-guides">Présentation des guides</a></li>
+				<li><a href="#%C3%A0-qui-s%E2%80%99adressent-ces-guides%C2%A0">À qui s’adressent ces guides&nbsp;?</a></li>
+				<li><a href="#les-dispositifs-techniques-pour-acc%C3%A9der-aux-contenus">Les dispositifs techniques pour accéder aux contenus</a></li>
+				</ul></li>
+				<li><a href="#bien-structurer-un-document">Bien structurer un document</a>
+				<ul>
+				<li><a href="#introduction-1">Introduction</a></li>
+				<li><a href="#titres">Titres</a></li>
+				<li><a href="#paragraphes">Paragraphes</a></li>
+				<li><a href="#listes">Listes</a></li>
+				<li><a href="#notes-de-bas-de-page">Notes de bas de page</a></li>
+				<li><a href="#num%C3%A9rotation-des-pages">Numérotation des pages</a></li>
+				<li><a href="#colonnes">Colonnes</a></li>
+				<li><a href="#objets-flottants">Objets flottants</a></li>
+				<li><a href="#ordre-de-lecture">Ordre de lecture</a></li>
+				<li><a href="#zones-de-texte">Zones de texte</a></li>
+				<li><a href="#masque-de-diapositives">Masque de diapositives</a></li>
+				<li><a href="#en-t%C3%AAtes-et-pieds-de-page-dans-les-diapositives">En-têtes et pieds de page dans les diapositives</a></li>
+				</ul></li>
+				<li><a href="#utiliser-une-pr%C3%A9sentation-appropri%C3%A9e">Utiliser une présentation appropriée</a>
+				<ul>
+				<li><a href="#introduction-2">Introduction</a></li>
+				<li><a href="#couleurs">Couleurs</a></li>
+				<li><a href="#polices">Polices</a></li>
+				<li><a href="#styles">Styles</a></li>
+				<li><a href="#th%C3%A8mes">Thèmes</a></li>
+				<li><a href="#mod%C3%A8les">Modèles</a></li>
+				</ul></li>
+				<li><a href="#langue-et-langage">Langue et langage</a>
+				<ul>
+				<li><a href="#introduction-3">Introduction</a></li>
+				<li><a href="#langue-du-document">Langue du document</a></li>
+				<li><a href="#abr%C3%A9viations-sigles-et-acronymes">Abréviations, sigles et acronymes</a></li>
+				<li><a href="#expressions-inhabituelles-idiomatiques-ou-sp%C3%A9cialis%C3%A9es">Expressions inhabituelles, idiomatiques ou spécialisées</a></li>
+				<li><a href="#mots-ou-passages-dans-une-langue-%C3%A9trang%C3%A8re">Mots ou passages dans une langue étrangère</a></li>
+				</ul></li>
+				<li><a href="#donner-une-alternative-aux-%C3%A9l%C3%A9ments-non-textuels">Donner une alternative aux éléments non-textuels</a>
+				<ul>
+				<li><a href="#introduction-4">Introduction</a></li>
+				<li><a href="#images">Images</a></li>
+				<li><a href="#images-textes">Images-textes</a></li>
+				<li><a href="#graphiques">Graphiques</a></li>
+				<li><a href="#formules-math%C3%A9matiques">Formules mathématiques</a></li>
+				<li><a href="#fichiers-multim%C3%A9dia">Fichiers multimédia</a></li>
+				</ul></li>
+				<li><a href="#cr%C3%A9er-des-tableaux-accessibles">Créer des tableaux accessibles</a>
+				<ul>
+				<li><a href="#introduction-5">Introduction</a></li>
+				<li><a href="#tableaux-de-mise-en-forme">Tableaux de mise en forme</a></li>
+				<li><a href="#tableaux-de-donn%C3%A9es">Tableaux de données</a></li>
+				<li><a href="#formatage">Formatage</a></li>
+				<li><a href="#en-t%C3%AAtes-de-lignes-et-de-colonnes">En-têtes de lignes et de colonnes</a></li>
+				<li><a href="#l%C3%A9gende-et-alternatives-textuelles">Légende et alternatives textuelles</a></li>
+				<li><a href="#copier-coller-des-tableaux-depuis-un-classeur-excel">Copier-coller des tableaux depuis un classeur Excel</a></li>
+				</ul></li>
+				<li><a href="#cr%C3%A9er-des-aides-%C3%A0-la-navigation">Créer des aides à la navigation</a>
+				<ul>
+				<li><a href="#introduction-6">Introduction</a></li>
+				<li><a href="#tables-des-mati%C3%A8res-des-illustrations-et-des-tableaux">Tables des matières, des illustrations et des tableaux</a></li>
+				<li><a href="#signets">Signets</a></li>
+				<li><a href="#renvois">Renvois</a></li>
+				<li><a href="#liens">Liens</a></li>
+				<li><a href="#citations">Citations</a></li>
+				</ul></li>
+				<li><a href="#cr%C3%A9er-des-formulaires-accessibles">Créer des formulaires accessibles</a></li>
+				<li><a href="#d%C3%A9finir-les-propri%C3%A9t%C3%A9s-du-document">Définir les propriétés du document</a></li>
+				<li><a href="#rendre-accessibles-les-pr%C3%A9sentations-orales">Rendre accessibles les présentations orales</a></li>
+				<li><a href="#v%C3%A9rifier-l%E2%80%99accessibilit%C3%A9">Vérifier l’accessibilité</a></li>
+				<li><a href="#publier-le-document-dans-d%E2%80%99autres-formats">Publier le document dans d’autres formats</a></li>
+				<li><a href="#licence">Licence</a></li>
+
+			</ul>
+		</nav>
+		<div class="github-link">
+			<p><a title="Contribuer sur Github" href="https://github.com/DISIC/guides-documents_bureautiques_accessibles">Contribuer</a></p>
+		</div>
+	</div>
+</div>
+
+<div id="wrapper">
+
+<main id="main" role="main">
+
+<h2 id="introduction">Introduction</h2>
+<h3 id="avant-propos">Avant-propos</h3>
+<p>La loi française n°2005-102 du 11 février 2005 pour l’égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées, fait de l’accessibilité une exigence pour tous les services de communication publique en ligne de l’État, des collectivités territoriales et des établissements publics qui en dépendent.</p>
+<p>Le RGAA (Référentiel Général d’Accessibilité pour les Administrations) a pour objectif de favoriser l’accessibilité des contenus diffusés sous forme numérique. En 2014, le RGAA a connu une refonte pour le mettre à jour et le rendre plus opérationnel. Les administrations françaises sont désormais tenues de se référer au RGAA version 3.</p>
+<p>Afin de répondre aux besoins de divers groupes et de différents contextes, trois niveaux de conformité ont été définis&nbsp;: A (le plus bas), AA et AAA. Le niveau légalement attendu est le niveau double A (AA). Les critères de succès associés au niveau AAA peuvent être pris en compte dans certains contextes, lorsque cela est possible et pertinent.</p>
+<h3 id="le-rgaa-et-les-documents-bureautiques">Le RGAA et les documents bureautiques</h3>
+<p>Le RGAA s’applique à tout document ou application disponible en ligne&nbsp;: les sites Internet, Intranet et les applications web, mais aussi les contenus proposés en téléchargement.</p>
+<p>Dans la thématique Consultation du RGAA, le critère 13.7 (niveau A) stipule que «&nbsp;chaque document bureautique en téléchargement possède, si nécessaire, une version accessible&nbsp;». La conformité à ce critère peut être atteinte notamment en fournissant une version HTML accessible ou en rendant accessible le document dans le format proposé en téléchargement.</p>
+<h3 id="présentation-des-guides">Présentation des guides</h3>
+<p>Ces guides d'accompagnement présentent les considérations et principes permettant de créer un document bureautique accessible, assortis de conseils et procédures non normatifs pour les mettre en œuvre.</p>
+<p>Le présent document décrit les principes généraux à appliquer pour produire des contenus bureautiques accessibles. Ces principes sont déclinés sous forme de procédures spécifiques, présentées et illustrées dans des guides dédiés téléchargeables, pour les logiciels suivants&nbsp;:</p>
+	<ul>
+		<li><span lang="en">Microsoft Word</span> 2013&nbsp;: <a href="../MicrosoftOfficeWord.odt">ODT - 3,1Mo</a>, <a href="../MicrosoftOfficeWord.pdf">PDF - 6,2Mo</a>&nbsp;;</li>
+			<li><span lang="en">Microsoft Excel</span> 2013&nbsp;: <a href="../MicrosoftOfficeExcel.odt">ODT - 2Mo</a>, <a href="../MicrosoftOfficeExcel.pdf">PDF - 4,1Ko</a>&nbsp;;</li>
+			<li><span lang="en">Microsoft PowerPoint</span> 2013&nbsp;: <a href="../MicrosoftOfficePowerPoint.odt">ODT - 1,7Mo</a>, <a href="../MicrosoftOfficePowerPoint.pdf">PDF - 3,6Mo</a>&nbsp;;</li>
+			<li>LibreOffice <span lang="en">Writer</span> 4.3&nbsp;: <a href="../LibreOfficeWriter.odt">ODT - 2Mo</a>, <a href="../LibreOfficeWriter.pdf">PDF - 4,4Mo</a>&nbsp;;</li>
+			<li>LibreOffice <span lang="en">Calc</span> 4.3&nbsp;: <a href="../LibreOfficeCalc.odt">ODT - 1,7Mo</a>, <a href="../LibreOfficeCalc.pdf">PDF - 3,5Mo</a>&nbsp;;</li>
+			<li>LibreOffice <span lang="en">Impress</span> 4.3&nbsp;: <a href="../LibreOfficeImpress.odt">ODT - 1,4Mo</a>, <a href="../LibreOfficeImpress.pdf">PDF - 3,2Mo</a>&nbsp;;</li>
+			<li><span lang="en">Adobe Acrobat Pro Document Cloud</span> 2015&nbsp;: <a href="../AdobeAcrobatPro.odt">ODT - 3,2Mo</a>, <a href="../AdobeAcrobatPro.pdf">PDF - 6,8Mo</a>.</li>
+	</ul>
+
+<p>À noter&nbsp;: il est recommandé d'ouvrir les fichiers proposés au format ODT avec LibreOffice&nbsp;; la restitution avec d'autres logiciels pourrait être dégradée.</p>
+<h3 id="à-qui-sadressent-ces-guides">À qui s’adressent ces guides&nbsp;?</h3>
+<p>Ces guides sont destinés à tout professionnel des services de l’État, des collectivités territoriales, des agences, des établissements publics, des entreprises publiques ou à toute personne souhaitant&nbsp;:</p>
+<ul>
+	<li>Produire des documents bureautiques accessibles&nbsp;;</li><li>Améliorer l’accessibilité de documents bureautiques existants&nbsp;;</li><li>Tester le niveau d’accessibilité de documents bureautiques déjà créés.</li>
+</ul>
+<h3 id="les-dispositifs-techniques-pour-accéder-aux-contenus">Les dispositifs techniques pour accéder aux contenus</h3>
+<p>Un document est accessible s’il peut être consulté par n’importe quel utilisateur, quel que soit l’outil informatique dont il dispose. De plus en plus d’utilisateurs sont amenés à se servir de technologies d'assistance pour surmonter des barrières à l’accès aux contenus bureautiques ou web. Ces solutions techniques comprennent&nbsp;:<p>
+	<ul>
+		<li>Des aides logicielles (lecteurs d'écran, logiciels de reconnaissance vocale/dictée, etc.)&nbsp;;</li><li>Des aides matérielles (souris adaptées, <span lang="en">trackballs</span>, afficheurs braille, etc.).</li>
+	</ul>
+<p>Les contenus et les applications doivent être compatibles avec ces diverses technologies d'assistance, leurs fonctionnalités et leurs usages.</p>
+<h2 id="bien-structurer-un-document"> Bien structurer un document</h2>
+<h3 id="introduction-1">Introduction</h3>
+<p>La notion de structure est centrale à tout document. En plus de faciliter la lecture, la mise en forme typographique (police, taille, espacement, etc.) et la position des éléments transmettent au lecteur une première hiérarchisation du contenu.</p>
+<p>À condition d'être appliqués correctement, l'utilisation de styles – un ensemble de caractéristiques de mise en forme – permet d'attribuer rapidement et facilement une structure au document tout en garantissant que cette structure soit accessible et navigable par les utilisateurs de technologies d’assistance.</p>
+<p>Lors de la composition du document, l’utilisation des fonctionnalités de mise en page (disposition du texte en colonnes, ancrage des objets insérés) permet d’assurer que l’ensemble des éléments dont le document est composé suivent un ordre logique, et qu’ils soient facilement atteignables au clavier et facilement consultables grâce aux technologies d’assistance.</p>
+<h3 id="titres">Titres</h3>
+<p>Les premiers éléments de structuration permettant de hiérarchiser un texte sont les titres et les sous-titres.</p>
+<p>Au départ, à tout texte d'un nouveau document est attribué un style par défaut. Ensuite différents jeux de styles rapides sont proposés. Il est nécessaire d'appliquer les styles appropriés aux titres, pour qu'ils soient correctement identifiés par les technologies d'assistance.</p>
+<p>Il est également possible de créer ses propres styles de titres et de les sauvegarder.</p>
+<p>À noter&nbsp;:</p>
+<ul>
+	 <li>L'application de styles pour les titres doit impérativement respecter la hiérarchie sans sauter de niveau de titre&nbsp;;</li><li>Il ne faut jamais utiliser les styles de titres uniquement à des fins de mise en forme&nbsp;;</li><li>En règle générale, les titres ne doivent pas dépasser une ligne&nbsp;;</li><li>Pour faciliter la navigation dans des documents plus longs, il faudrait au moins un titre toutes les deux pages&nbsp;;</li><li>Il est possible de vérifier que les styles ont été correctement appliqués en visualisant la table des matières, en utilisant le mode plan ou le volet de navigation selon les logiciels utilisés.</li>
+	</ul>
+<h3 id="paragraphes">Paragraphes</h3>
+<p>Tout texte de paragraphe doit être identifié comme tel.</p>
+<p>Des retours à la ligne à répétition insérés pour aérer un document sont à éliminer car une succession de paragraphes vides peut être perçue par l’utilisateur d’un lecteur d'écran ou d’une synthèse vocale comme signalant la fin du document. Des espaces vides peuvent être générés par l'application de styles intégrant des écarts plus ou moins importants selon les besoins.</p>
+<p>De même, lorsque l'on souhaite continuer la rédaction sur une nouvelle page, il faut insérer un saut de page plutôt qu'une succession de retours à la ligne.</p>
+<h3 id="listes">Listes</h3>
+<p>Des listes créées uniquement en insérant des tirets sous forme de signes «&nbsp;-&nbsp;» ou autres caractères spéciaux ne seront pas restituées correctement par certaines technologies d’assistance qui les interpréteront comme une suite de paragraphes distincts. Il est alors impératif de créer des listes identifiées comme telles, en utilisant les styles de listes à puces ou de listes numérotées.</p>
+<h3 id="notes-de-bas-de-page">Notes de bas de page</h3>
+<p>Les notes de bas de page et les notes de fin de document contiennent des informations complémentaires. Elles sont constituées de deux parties liées, à savoir la marque d'appel et le texte de la note correspondant.</p>
+<p>L'utilisateur pourra naviguer entre texte et note à condition qu'elles soient insérées correctement.</p>
+<h3 id="numérotation-des-pages">Numérotation des pages</h3>
+<p>La numérotation de pages fournit à tout utilisateur, y compris aux utilisateurs de technologies d'assistance, un point de repère important. La fonctionnalité d'insertion de numéros de page doit être doit être utilisée&nbsp;: le numéro ne doit pas être positionnée manuellement en haut ou en bas de la page.</p>
+<h3 id="colonnes">Colonnes</h3>
+<p>Des colonnes créées avec la touche tabulation ou par l'artifice d'un tableau peuvent causer des difficultés aux utilisateurs de technologies d’assistance. Il est nécessaire d'utiliser les fonctionnalités appropriées pour organiser une partie du document en colonnes distinctes et facilement navigables.</p>
+<h3 id="objets-flottants">Objets flottants</h3>
+<p>Lorsque des images ou des objets sont insérés dans un document, ils sont par défaut positionnés relativement à la page et restent à la même position lorsque l'utilisateur parcourt la page. Ce comportement rend ces &quot;objets flottants&quot;, difficilement sélectionnables au clavier. Il convient de s'assurer que les objets insérés dans un document (images, formes, etc.) restent associés au texte auquel ils font référence en définissant un point d'ancrage.</p>
+<h3 id="ordre-de-lecture">Ordre de lecture</h3>
+<p>Les technologies d’assistance parcourent le document de manière linéaire.</p>
+<p>Il faut prendre quelques précautions pour que l’ordre de lecture soit cohérent&nbsp;:</p><ul>
+<li>Ne pas utiliser les tableaux de données pour mettre en forme les contenus (textes ou images) du document&nbsp;;</li><li>Ne pas utiliser les touches de tabulation pour créer des colonnes&nbsp;;</li><li>Ne pas utiliser des zones de texte éditables pour mettre en valeur certains contenus, mais plutôt des styles.</li>
+</ul>
+<h3 id="zones-de-texte"> Zones de texte</h3>
+<p>Les zones de texte posent souvent problème car elles peuvent être ignorées par certains lecteurs d’écran. Pour cette raison, il est préférable de créer un encadré en appliquant un style.</p>
+<h3 id="masque-de-diapositives"> Masque de diapositives</h3>
+<p>Lorsqu'on créé des diapositives, il est utile de créer un masque de diapositive, qui représente la diapositive «&nbsp;maîtresse&nbsp;» qui stocke toutes les informations relatives à la mise en page, y compris la taille et le positionnement des zones de contenu. Les styles de chaque nouvelle diapositive sont hérités de ce masque.</p>
+<p>Tout masque créé ou utilisé doit répondre aux exigences d’accessibilité présentées dans ce guide.</p>
+<p>Il est préférable de créer un masque de diapositives avant de commencer à créer la présentation afin que toute nouvelle diapositive soit basée sur un ou des masques accessibles.</p>
+<h3 id="en-têtes-et-pieds-de-page-dans-les-diapositives">En-têtes et pieds de page dans les diapositives</h3>
+<p>Les en-têtes et pieds de page ne sont pas lus automatiquement par les lecteurs d’écran. Pour cette raison, il faut éviter de mettre des informations importantes dans ces zones.</p>
+<h2 id="utiliser-une-présentation-appropriée"> Utiliser une présentation appropriée</h2>
+<h3 id="introduction-2">Introduction</h3>
+<p>La complexité visuelle d’un document (la quantité, la densité et la variété de polices, de couleurs, de textes, etc.) peut jouer un rôle décisif dans la compréhension de son contenu. Pour les utilisateurs navigants à l’aide de technologies d’assistance, un document d’apparence complexe s’appuie souvent sur une structure complexe et peut nécessiter plus de temps à appréhender. Si la compréhension de certains contenus passe uniquement par la couleur ou la forme, la taille ou la position, ces lecteurs risquent de passer à côté de certaines informations.</p>
+<p>Lors de la composition du document, l’utilisation de styles et de polices standards permet d’en assurer la lisibilité pour tous.</p>
+<h3 id="couleurs">Couleurs</h3>
+<p>Si une information est transmise uniquement par la couleur, les utilisateurs de lecteurs d'écran (personnes aveugles ou malvoyantes) ainsi que certaines personnes daltoniennes n'y auront pas accès. Toute information véhiculée par la couleur doit donc être aussi disponible via un autre moyen (par exemple un style approprié).</p>
+<p>Pour des informations données par la couleur dans du texte, la solution consiste à ajouter un texte explicatif. Par exemple, dans une procédure indiquant que les éléments en rouge sont obligatoires, il faudra&nbsp;:</p>
+ <ul><li>Numéroter les éléments&nbsp;;</li><li>Ajouter une note du type&nbsp;: «&nbsp;Les éléments numérotés de 2 à 4 (en rouge) sont obligatoires&nbsp;».</li></ul>
+<p>Le contraste entre la couleur du fond et celle du texte doit également être suffisant pour rendre la lecture du document confortable. Le RGAA stipule que le rapport de contraste entre un texte sans effet de graisse et son arrière-plan doit être de 4,5:1 jusqu'à 150% de la taille de police par défaut, et de 3:1 au-delà. Pour les textes en gras, le même rapport de contraste est nécessaire jusqu'à 120% de la taille de police par défaut, et 3:1, au-delà. Cette règle s’applique aussi bien aux textes qu’aux graphiques et aux images.</p>
+<p>Un vérificateur de contraste permet de déterminer si les couleurs utilisées ont un contraste suffisant. Le <span lang="en">Color Contrast Analyser</span> du Paciello Group peut être téléchargé gratuitement à l'adresse suivante&nbsp;: <a href="https://www.paciellogroup.com/resources/contrastanalyser/">https://www.paciellogroup.com/resources/contrastanalyser/</a>.</p>
+<p>Un vérificateur en ligne est également proposé par Tanaguru à l'adresse&nbsp;: <a href="http://contrast-finder.tanaguru.com/?lang=fr">http://contrast-finder.tanaguru.com/?lang=fr</a>.</p>
+<h3 id="polices">Polices</h3>
+<p>Pour les raisons citées ci-dessus, il est obligatoire d’utiliser l’application de styles plutôt que les outils de formatage de caractères pour mettre en forme tout élément ayant une valeur sémantique (titres, éléments de liste, notes, etc.).</p>
+<p>Dans la mesure du possible, il convient de privilégier certaines normes de mise en forme pour faciliter la lecture et rendre les documents lisibles dans les principaux éditeurs de texte&nbsp;:</p>
+ <ul>
+ 	<li>Des polices standards créées dans le but de faciliter la lecture&nbsp;: Arial, Calibri, Cambria, Constantia, Garamond, Georgia, Helvetica, Times New Roman, Trebuchet MS et Verdana&nbsp;;</li><li>Des tailles de police comprises entre 12 et 18 points pour le corps du texte&nbsp;;</li><li>Un espacement entre les caractères normal ou élargi, plutôt que condensé.</li>
+ </ul>
+<p>Il faut éviter de proposer&nbsp;:</p>
+ <ul>
+ 	<li>De longues portions de texte en majuscules, italique ou soulignée&nbsp;;</li><li>Du texte animé ou défilant.</li>
+ </ul>
+<h3 id="styles">Styles</h3>
+<p>Les styles permettent de donner une structure hiérarchique au document mais également de mettre en évidence certains types de contenus (citation, légende, etc.). Afin de permettre aux lecteurs de comprendre le sens du formatage, il convient d'utiliser les styles plutôt que d'utiliser directement les outils de formatage de caractères.</p>
+<h3 id="thèmes">Thèmes</h3>
+<p>Un thème est un ensemble de couleurs, de polices et d'effets de mise en page qui peuvent être appliqués au document. Les logiciels proposent de nombreux thèmes prédéfinis. Il est également possible d’en personnaliser pour répondre aux exigences du RGAA en termes de couleurs et de polices.</p>
+<h3 id="modèles">Modèles</h3>
+<p>Un modèle sert de base aux nouveaux documents et contient des styles de formatage prédéfinis.</p>
+<p>Il est possible de créer son propre modèle accessible à partir d'un contenu vierge, ou d'éditer et de modifier des modèles préexistants pour prendre en compte les recommandations d'accessibilité.</p>
+<h2 id="langue-et-langage"> Langue et langage</h2>
+<h3 id="introduction-3">Introduction</h3>
+<p>Quand les contenus d'un document sont bien identifiés, organisés selon une logique cohérente, et aérés, ils sont plus faciles à consulter. De même, les documents dotés d'en-têtes clairs, de paragraphes courts et de phrases concises, simples, et sans jargon seront accessibles au plus grand nombre.</p>
+<p>Quand il est nécessaire d’employer des termes techniques, des mots dans une langue étrangère ou des abréviations, il est important de donner au lecteur les indications utiles à leur bonne compréhension.</p>
+<h3 id="langue-du-document">Langue du document</h3>
+<p>La langue sélectionnée pour le document détermine le dictionnaire utilisé pour la vérification orthographique, les synonymes et la césure des mots, ainsi qu'un certain nombre de règles de formatage. Pour les logiciels de synthèse vocale, elle détermine également la manière dont les contenus sont prononcés. Il est alors impératif de définir une langue pour tout document, et de s'assurer que tout mot ou passage dans une autre langue soit correctement identifié.</p>
+<h3 id="abréviations-sigles-et-acronymes">Abréviations, sigles et acronymes</h3>
+<p>Souvent, il n’existe pas de mécanisme pour identifier les acronymes, les sigles ou les abréviations. Il est toutefois possible de faciliter la compréhension en suivant quelques recommandations&nbsp;:</p>
+ <ul>
+ 	<li>La signification des abréviations, sigles et acronymes doit être indiquée en clair dans le texte dès la première occurrence, suivi par l’abréviation, sigle ou acronyme entre parenthèses. Par exemple&nbsp;: Régie Autonome des Transports Parisien (RATP)&nbsp;;</li><li>Il est possible de relier un acronyme, un sigle ou une abréviation avec un glossaire via un signet ou un lien hypertexte.</li>
+ </ul>
+<h3 id="expressions-inhabituelles-idiomatiques-ou-spécialisées">Expressions inhabituelles, idiomatiques ou spécialisées</h3>
+<p>Quand il est nécessaire d’employer des expressions inhabituelles, idiomatiques ou spécialisées, il faut faire en sorte de fournir une définition accessible. Ces définitions peuvent être proposées dans les notes de pieds de page ou de fin de document, ou regroupées dans un glossaire et reliées par des signets.</p>
+<h3 id="mots-ou-passages-dans-une-langue-étrangère">Mots ou passages dans une langue étrangère</h3>
+<p>Les mots en langue étrangère doivent être correctement signalés afin que les synthèses vocales les prononcent correctement.</p>
+<p>Il convient de faire en sorte que la langue étrangère soit sélectionnée comme langue d’édition pour le document puis de signaler chaque changement de langue. Aucun changement visuel n’aura lieu&nbsp;; seules les technologies d’assistance auront accès à cette information.</p>
+<h2 id="donner-une-alternative-aux-éléments-non-textuels"> Donner une alternative aux éléments non-textuels</h2>
+<h3 id="introduction-4">Introduction</h3>
+<p>Les éléments non-textuels tiennent une place de plus en plus importante dans les documents bureautiques&nbsp;: des photos, des cartes, des graphiques et des formules mathématiques viennent enrichir des documents et transmettre de l’information aux lecteurs.</p>
+<p>Pour les éléments non-textuels qui véhiculent une information non présentée sous forme de texte à leur proximité, cette information doit être décrite dans un texte de remplacement. Sans description appropriée, ces éléments demeurent non-perceptibles par les technologies d’assistance qui signaleront la présence d’un élément graphique sans aucune autre information.</p>
+<p>Il est possible de créer un texte de remplacement qui sera restitué au lecteur par les technologies d’assistance. Les outils varient en fonction de la nature du contenu non-textuel.</p>
+<h3 id="images">Images</h3>
+<p>Il convient de se poser 3 questions avant de choisir le texte qui sera annoncé à la place de l'image&nbsp;:</p>
+<ul>
+	<li>L'image est-elle purement décorative, ne transmettant aucune information et n’ayant pas de fonction&nbsp;?</li><li>L'élément véhicule-t-il une information&nbsp;?</li><li>L'image a-t-elle une fonction (par exemple, une image servant de lien)&nbsp;?</li>
+</ul>
+<p>Si l’image est purement décorative, il ne faut pas lui attribuer de texte de remplacement.</p>
+<p>Si l’image véhicule une information, il faut lui associer un texte de remplacement. Cette alternative, qui fait également office de titre, doit décrire de manière succincte l’information véhiculée par l’image et sa signification dans le contexte. Pour une image qui sert de lien hypertexte, le texte de remplacement doit permettre de comprendre la fonction et la destination du lien. Les conditions de restitution de ce texte de remplacement nécessitent qu'il soit le plus court possible une longueur maximum de 80 caractères est fortement recommandée). Dès lors que l'information nécessite une alternative plus longue, il faut attribuer une description détaillée.</p>
+<p>Un texte de remplacement ne doit pas&nbsp;:</p>
+<ul>
+ <li>Dupliquer l’information de la légende&nbsp;;</li><li>Comprendre des informations relatives au droit d’auteur (par exemple, pour une photo, le nom du titulaire des droits et la date de la prise de vue)&nbsp;;</li><li>Commencer avec «&nbsp;image de&hellip;&nbsp;» ou «&nbsp;photo de&hellip;&nbsp;».</li>
+
+</ul>
+<p>Une description détaillée est parfois nécessaire lorsque les informations véhiculées par l'image sont plus complexes. Cela demande un travail d'interprétation de l'image.</p>
+<h3 id="images-textes">Images-textes</h3>
+<p>Il n'est pas recommandé d'utiliser des images textes lorsqu'il est possible de reproduire les mêmes effets en travaillant les styles du &quot;vrai texte&quot;. Si le texte fait partie d'un logo ou d'un élément associé à l'identité graphique d'un organisme ou d'une société il convient de proposer une alternative textuelle à l'image en respectant les conseils proposés ci-dessus.</p>
+<h3 id="graphiques">Graphiques</h3>
+<p>Les données représentées dans des graphiques peuvent aller du très simple au très complexe. Dans un premier temps, il convient de créer un graphique accessible aux lecteurs daltoniens et malvoyants. Cela implique de&nbsp;:</p>
+<ul>
+<li>Ne pas utiliser la couleur seule pour transmettre l’information (l'emploi de textures ou de formes permet de différencier les composants du graphique par exemple)&nbsp;;</li>
+<li>Privilégier l'emploi de styles de lignes en pointillées afin d’améliorer la lisibilité&nbsp;; </li>
+<li>Si nécessaire, remplacer les couleurs prédéfinies pour respecter les exigences de contraste.</li>
+
+</ul>
+<h3 id="formules-mathématiques">Formules mathématiques</h3>
+<p>Selon les logiciels utilisés, il est nécessaire d'utiliser l'éditeur d'équation proposé nativement ou d'installer un <span lang="en">plug-in</span> supplémentaire qui se chargera de la conversion des formules mathématiques dans un format qui pourra être interprété par les technologies d'assistance (MathML). C'est par exemple le cas de l’extension payante MathType pour Office, qui permet d'éditer et d'exporter des équations&nbsp;: <a href="http://www.dessci.com/en/products/mathtype/trial.asp">http://www.dessci.com/en/products/mathtype/trial.asp</a>.</p>
+<h3 id="fichiers-multimédia">Fichiers multimédia</h3>
+<p>Un texte de remplacement doit accompagner toute vidéo ou séquence audio. Il est également nécessaire de fournir une transcription pour toute vidéo u séquence audio, et de s’assurer que les vidéos intègrent des sous-titres sous-titres embarqués («&nbsp;<span lang="en">closed captions</span>&nbsp;») pour les vidéos en ligne, ou directement dans le fichier vidéo.</p>
+<p>Le rôle de la transcription est de fournir une alternative cohérente au contenu multimédia. Les lecteurs doivent avoir accès à toutes les informations véhiculés par le fichier vidéo ou audio, y compris les dialogues entre les protagonistes participant, la localisation, les principales actions et l'ambiance.</p>
+<p>Il est également possible de proposer une audiodescription, c'est à dire une piste sonore supplémentaire ajouté à la vidéo qui décrive les éléments visuels&nbsp;: les actions, les mouvements, les expressions, les décors, etc. entre les dialogues et les éléments sonores importants.</p>
+<p>La transcription peut être proposée en annexe ou dans un fichier téléchargeable stocké sur un serveur et accessible via un lien situé à proximité de l’objet (même chose pour l’audiodescription). L’intitulé du lien doit permettre d’identifier clairement que l’audiodescription ou la transcription proposées concernent la vidéo située dans l’objet car il n’est pas possible d’établir de relation sémantique entre les deux.</p>
+<h2 id="créer-des-tableaux-accessibles"> Créer des tableaux accessibles</h2>
+<h3 id="introduction-5">Introduction</h3>
+<p>Les tableaux constituent un environnement complexe pour les utilisateurs de technologies d’assistance car l'organisation des informations et les relations entre elles ne peuvent pas être perçues rapidement et de manière globale. Il est nécessaire de faire en sorte que chaque cellule de contenu du tableau puisse être reliée correctement à la ou les cellules d'en-têtes qui en donnent le sens.</p>
+<h3 id="tableaux-de-mise-en-forme">Tableaux de mise en forme</h3>
+<p>L'utilisation des tableaux à des fins de mise en page n'est en général pas une bonne pratique&nbsp;: il est préférable d’utiliser les fonctions de mise en page (colonnes, bordures, etc.). Toutefois, certains logiciels permettent de distinguer entre les tableaux de mise en forme et les tableaux de données. Pour les tableaux de mise en forme, il est impératif de présenter les informations dans un ordre logique (en français&nbsp;: de gauche à droite et de haut en bas) pour s’assurer qu’il a du sens et pour ne pas égarer l’utilisateur.</p>
+<h3 id="tableaux-de-données">Tableaux de données</h3>
+<p>L'utilisation de la touche tabulation et la barre d'espace pour simuler des tableaux de données est à éviter car les technologies d’assistance ne sont pas en mesure d'interpréter ce type de formatage. Pour insérer un tableau de données, il faut passer par les fonctionnalités appropriées proposées par les logiciels, en respectant les recommandations suivantes&nbsp;:</p>
+<h4 id="formatage">Formatage</h4>
+<p>Si un tableau de données s’avère la meilleure option pour restituer l’information, il est nécessaire de respecter des règles de formatage pour que les données présentées soient accessibles et compréhensibles au plus grand nombre&nbsp;:</p>
+<ul>
+<li>Créer un tableau uniforme facilitant l’identification de chaque cellule et sa signification dans le contexte&nbsp;;</li>
+<li>Préférer plusieurs tableaux simples à des tableaux plus complexes&nbsp;;</li>
+<li>Éviter d’imbriquer les tableaux les uns dans les autres&nbsp;;</li>
+<li>Dans la mesure du possible éviter de fusionner des cellules&nbsp;;</li>
+<li>Éliminer les cellules vides – si une donnée est absente, la remplacer par une mention explicite&nbsp;;</li>
+<li>Générer des lignes blanches à l’aide des styles et non pas en insérant des lignes vides&nbsp;;</li>
+<li>Éviter d’insérer des images au sein du tableau.</li>
+</ul>
+<h4 id="en-têtes-de-lignes-et-de-colonnes">En-têtes de lignes et de colonnes</h4>
+<p>Il convient ensuite d’identifier le contenu du tableau par le biais des en-têtes, de la légende, et du texte alternatif, et de définir ces propriétés pour permettre une meilleure restitution par les lecteurs d’écran.</p>
+<p>Les en-têtes des lignes et des colonnes donnent un sens à la relation entre les données présentées.</p>
+<p>À noter&nbsp;: Les intitulés des en-têtes doivent être clairs et concis.</p>
+<h4 id="légende-et-alternatives-textuelles">Légende et alternatives textuelles</h4>
+<p>Une légende de tableau permet de présenter la fonction du tableau et la manière dont il est organisé. Toutes les abréviations utilisées au sein du tableau doivent être explicitées dans la légende.</p>
+<p>Une alternative textuelle est nécessaire pour présenter au plus juste la fonction d’un tableau de données complexe dans le contexte où il se trouve. Souvent une description détaillée présentant les faits saillants ou une synthèse des données présentées dans le tableau est nécessaire.</p>
+<h3 id="copier-coller-des-tableaux-depuis-un-classeur-excel">Copier-coller des tableaux depuis un classeur Excel</h3>
+<p>Lorsqu’on insère un tableau dans un document à partir d'un autre document, il est nécessaire de veiller à ce que celui-ci soit bien copié sous la forme d'un tableau et non sous celle d'une image qui ne pourra alors plus permettre aux technologies d'assistance de naviguer à l'intérieur du contenu.</p>
+<h2 id="créer-des-aides-à-la-navigation">Créer des aides à la navigation</h2>
+<h3 id="introduction-6">Introduction</h3>
+<p>La consultation d'un document ne doit pas obligatoirement se faire de manière linéaire. À condition que le document soit bien structuré, avec l’application correcte de titres, de légendes, de notes de bas de page, etc., une structure hypertexte peut être générée automatiquement permettant aux utilisateurs de se déplacer rapidement à l’intérieur du document.</p>
+<p>En complément des éléments de structuration décrits dans les parties précédentes, et des tables des matières/illustrations/tableaux qui peuvent en être générées, il est possible d’enrichir le document avec des éléments de navigation pointant vers des contenus à l’intérieur et à l’extérieur du document.</p>
+<h3 id="tables-des-matières-des-illustrations-et-des-tableaux">Tables des matières, des illustrations et des tableaux</h3>
+<p>La table des matières ne doit pas être générée manuellement&nbsp;: il convient d'utiliser les fonctionnalités proposés par les outils pour le faire.</p>
+<h3 id="signets">Signets</h3>
+<p>Un signet permet d’identifier un emplacement ou une sélection de texte qui peut être référencé ailleurs dans le document. Plutôt que faire défiler le document pour retrouver le texte, l’utilisateur peut y accéder facilement à l'aide d'outils listant les signets.</p>
+<h3 id="renvois">Renvois</h3>
+<p>Les renvois permettent aux utilisateurs d'accéder directement à des passages de texte ou à des objets dans un document. Les renvois se composent d'une cible et d'une référence.</p>
+<h3 id="liens">Liens</h3>
+<p>L’usage de liens permet aux utilisateurs de circuler au sein du document et de naviguer vers des ressources externes le cas échéant. Il convient d’utiliser des intitulés explicites qui rendent les liens compréhensibles dans leur contexte, c'est à dire la phrase ou le paragraphe où ils se situent.</p>
+<h3 id="citations">Citations</h3>
+<p>Lorsque c'est possible, il est recommandé d'associer des citations à des références bibliographiques de manière cohérente et accessible aux technologies d’assistance&nbsp;: cela permet aux utilisateurs d'accéder facilement à la référence bibliographique liée à un passage du texte.</p>
+<h2 id="créer-des-formulaires-accessibles"> Créer des formulaires accessibles</h2>
+<p>Un formulaire est un espace de saisie, pouvant comporter plusieurs «&nbsp;champs&nbsp;» où l’on peut renseigner du texte, cocher des cases, effectuer un choix dans une liste de termes prédéfinis, appuyer sur des boutons, etc.</p>
+<p>Les formulaires bien conçus seront accessibles aux personnes navigantes à l'aide de technologies d'assistance à condition qu'ils respectent quelques règles simples&nbsp;:</p>
+ <ul>
+ 	<li>Le cheminement (ordre de tabulation) doit être logique et compréhensible&nbsp;;</li>
+ 	<li>Chaque champ de formulaire doit être identifié&nbsp;;</li>
+ 	<li>Les champs du formulaire doivent être éditables&nbsp;;</li>
+ 	<li>Les informations de même nature doivent être regroupées et signalées clairement&nbsp;;</li>
+ 	<li>Si possible, les informations de même nature doivent être regroupées&nbsp;;</li>
+ 	<li>Pour des formulaires complexes, une brève description permettant de connaître le nombre de questions ou de sections et une estimation du temps nécessaire pour renseigner le formulaire peut éventuellement être proposée.</li>
+
+</ul>
+<h2 id="définir-les-propriétés-du-document"> Définir les propriétés du document</h2>
+<p>Les propriétés de document, également appelées les métadonnées, sont des informations relatives à un fichier qui le décrivent ou l’identifient. Elles comprennent des informations comme le titre, le nom de l’auteur, l’objet et les mots clés identifiant les rubriques ou le contenu du document.</p>
+<p>À l'ouverture d'un document, certaines technologies d'assistance se réfèrent à ces propriétés pour annoncer le titre du document et pour résumer le contenu.</p>
+<p>Ces propriétés sont également conservées et exploitées lorsque le document est publié dans un autre format.</p>
+<p>Il est nécessaire d'indiquer au moins le titre du document, et éventuellement l'auteur, des mots-clés et une mention concernant l'accessibilité lorsque c'est possible.</p>
+<h2 id="rendre-accessibles-les-présentations-orales">Rendre accessibles les présentations orales</h2>
+<p>Des diapositives (PowerPoint ou Impress) peuvent être utilisées de manière autonome, mais sont souvent utilisées pour soutenir une présentation orale avec de l’information visuelle.</p>
+<p>Pour créer des présentations accessibles à tous, indépendamment des capacités ou des limitations des auditeurs, il est impératif que toute information visuelle qui apporte du sens à la présentation orale soit décrite pour que les personnes qui ne parviennent pas à consulter l’écran aient accès à cette même information. En aucun cas la diapositive ne doit remplacer le discours oral.</p>
+<p>Pour rendre les informations présentées accessibles et compréhensibles au plus grand nombre&nbsp;:</p>
+<ul>
+<li>Si possible, distribuez une copie électronique de vos diapositives à l’avance pour que les auditeurs aient la possibilité de consulter l’information présentée à l’écran sur leurs ordinateurs portables. Certains participants bénéficieront aussi d’une version imprimée en texte agrandi&nbsp;;</li>
+<li>Exprimez-vous de manière claire et précise, sans accélération du débit de parole&nbsp;;</li>
+<li>Commencez en vous présentant et en annonçant le format de la présentation (le temps alloué, le déroulé, quand les auditeurs pourront poser leurs questions, etc.). Si vous êtes d’accord pour que les auditeurs vous interrompent pour solliciter une explication en cas d’incompréhension, faites le savoir&nbsp;;</li>
+<li>Faites en sorte que tout texte présenté à l’écran soit annoncé verbalement. Et n’oubliez pas de vous limiter à entre 3 et 7 phrases par diapositive&nbsp;;</li>
+<li>Expliquez tout graphique ou diagramme en explicitant l'information que vous souhaitez transmettre en le présentant&nbsp;;</li>
+<li>Décrivez, plutôt que montrer du doigt, l’endroit sur la diapositive où se situe l’information à laquelle vous faites référence&nbsp;;</li>
+<li>Si quelqu’un vous pose une question, répétez la question avant d’y répondre.</li>
+</ul>
+<h2 id="vérifier-laccessibilité"> Vérifier l’accessibilité</h2>
+<p>Certains outils intègrent un vérificateur d’accessibilité. Le vérificateur d’accessibilité permet d’identifier les contenus susceptibles de poser des problèmes de lecture pour des personnes naviguant à l’aide de technologies d’assistance.</p>
+<p>Les vérificateurs permettent de détecter certains problèmes tels que l'absence d'alternatives aux images ou l'incohérence du titrage du document. Toutefois, il est à noter que l'utilisation de ces vérificateurs ne dispense pas d'un contrôle manuel, car la conformité aux critères d'accessibilité ne peut être vérifiée automatiquement que pour une proportion faible des critères.</p>
+<h2 id="publier-le-document-dans-dautres-formats"> Publier le document dans d’autres formats</h2>
+<p>Si les techniques décrites dans ce guide sont utilisées lors de la création d’un document électronique, le dit document pourra non seulement être lu par des utilisateurs de technologies d’assistance des logiciels utilisés pour la création, mais sa composition sémantique lui permettra également une meilleure conversion dans d’autres formats, même si quelques ajustements peuvent néanmoins être nécessaires selon le format choisi.</p>
+<p>Dans ces guides, la publication est abordée pour les formats suivants&nbsp;:</p>
+<ul>
+	 <li>Format <abbr title="Hypertext Markup Language">HTML</abbr>&nbsp;;</li><li>Format <abbr title="Portable Document Format">PDF</abbr>.</li>
+</ul>
+<p>La conversion vers ces formats suppose que les documents soient correctement structurés en amont en suivant les conseils décrits dans les chapitres précédents de ce guide.</p>
+<p>Il est nécessaire de s'assurer que les éléments liés à l'accessibilité du document soient conservés lors de l'enregistrement ou l'export vers d'autres formats. Ce travail d’évaluation et d’éventuelles corrections dues à la perte d’information ou d’erreurs de conversion est abordé en détail pour l'export au format PDF dans le guide sur <span lang="en">Adobe Acrobat Pro DC</span>. Pour l'export en HTML, il est nécessaire d'utiliser des techniques de vérification propres à ce langage qui ne sont pas abordées dans ces guides.</p>
+
+	</main>
+	<footer id="footer" role="contentinfo" class="clear">
+<h2 id="licence">Licence</h2>
+<p>Ce document est la propriété du Secrétariat général à la modernisation de l'action publique français (SGMAP). Il est placé sous la <a href="http://wiki.data.gouv.fr/wiki/Licence_Ouverte_/_Open_Licence">licence ouverte 1.0 ou ultérieure</a>, équivalente à une licence <i lang="en">Creative Commons BY</i>. Pour indiquer la paternité, ajouter un lien vers la version originale du document disponible sur le <a href="https://github.com/DISIC">compte <span lang="en">Github</span> de la DInSIC</a>.</p>
+	</footer>
+
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
+
