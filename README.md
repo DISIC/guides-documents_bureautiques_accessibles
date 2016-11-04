@@ -70,7 +70,7 @@
 
 La loi française n°2005-102 du 11 février 2005 pour l’égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées, fait de l’accessibilité une exigence pour tous les services de communication publique en ligne de l’État, des collectivités territoriales et des établissements publics qui en dépendent.
 
-Le RGAA (Référentiel Général d’Accessibilité pour les Administrations) a pour objectif de favoriser l’accessibilité des contenus diffusés sous forme numérique. En 2014, le RGAA a connu une refonte pour le mettre à jour et le rendre plus opérationnel. Les administrations françaises sont désormais tenues de se référer au RGAA version 3.
+Le RGAA (Référentiel Général d’Accessibilité pour les Administrations) a pour objectif de favoriser l’accessibilité des contenus diffusés sous forme numérique. En 2014, le RGAA a connu une refonte pour le mettre à jour et le rendre plus opérationnel. Les administrations françaises sont désormais tenues de se référer au RGAA&nbsp;3&nbsp;2016.
 
 Afin de répondre aux besoins de divers groupes et de différents contextes, trois niveaux de conformité ont été définis&nbsp;: A (le plus bas), AA et AAA. Le niveau légalement attendu est le niveau double A (AA). Les critères de succès associés au niveau AAA peuvent être pris en compte dans certains contextes, lorsque cela est possible et pertinent.
 
@@ -86,13 +86,13 @@ Ces guides d'accompagnement présentent les considérations et principes permett
 
 Le présent document décrit les principes généraux à appliquer pour produire des contenus bureautiques accessibles. Ces principes sont déclinés sous forme de procédures spécifiques, présentées et illustrées dans des guides dédiés téléchargeables, pour les logiciels suivants&nbsp;:
 
-* Microsoft <span lang="en">Word</span> 2013&nbsp;: [ODT - 3,1Mo](./MicrosoftOfficeWord.odt), [PDF - 6,2Mo](./MicrosoftOfficeWord.pdf)
-* Microsoft <span lang="en">Excel</span> 2013&nbsp;: [ODT - 2Mo](./MicrosoftOfficeExcel.odt), [PDF - 4,1Ko](./MicrosoftOfficeExcel.pdf)
-* Microsoft <span lang="en">PowerPoint</span> 2013&nbsp;: [ODT - 1,7Mo](./MicrosoftOfficePowerPoint.odt), [PDF - 3,6Mo](./MicrosoftOfficePowerPoint.pdf)
-* LibreOffice <span lang="en">Writer</span> 4.3&nbsp;: [ODT - 2Mo](./LibreOfficeWriter.odt), [PDF - 4,4Mo](./LibreOfficeWriter.pdf)
-* LibreOffice <span lang="en">Calc</span> 4.3&nbsp;: [ODT - 1,7Mo](./LibreOfficeCalc.odt), [PDF - 3,5Mo](./LibreOfficeCalc.pdf)
-* LibreOffice <span lang="en">Impress</span> 4.3&nbsp;: [ODT - 1,4Mo](./LibreOfficeImpress.odt), [PDF - 3,2Mo](./LibreOfficeImpress.pdf)
-* <span lang="en">Adobe Acrobat Pro Document Cloud</span> 2015&nbsp;: [ODT - 3,2Mo](./AdobeAcrobatPro.odt), [PDF - 6,8Mo](./AdobeAcrobatPro.pdf)
+* Microsoft <span lang="en">Word</span> 2013&nbsp;: [ODT - 3,2Mo](./MicrosoftOfficeWord.odt), [PDF - 2,7Mo](./MicrosoftOfficeWord.pdf)
+* Microsoft <span lang="en">Excel</span> 2013&nbsp;: [ODT - 2Mo](./MicrosoftOfficeExcel.odt), [PDF - 2Mo](./MicrosoftOfficeExcel.pdf)
+* Microsoft <span lang="en">PowerPoint</span> 2013&nbsp;: [ODT - 1,7Mo](./MicrosoftOfficePowerPoint.odt), [PDF - 1,7Mo](./MicrosoftOfficePowerPoint.pdf)
+* LibreOffice <span lang="en">Writer</span> 4.3&nbsp;: [ODT - 2Mo](./LibreOfficeWriter.odt), [PDF - 1,9Mo](./LibreOfficeWriter.pdf)
+* LibreOffice <span lang="en">Calc</span> 4.3&nbsp;: [ODT - 1,7Mo](./LibreOfficeCalc.odt), [PDF - 1,6Mo](./LibreOfficeCalc.pdf)
+* LibreOffice <span lang="en">Impress</span> 4.3&nbsp;: [ODT - 1,4Mo](./LibreOfficeImpress.odt), [PDF - 1,5Mo](./LibreOfficeImpress.pdf)
+* <span lang="en">Adobe Acrobat Pro Document Cloud</span> 2015&nbsp;: [ODT - 3,2Mo](./AdobeAcrobatPro.odt), [PDF - 2,9Mo](./AdobeAcrobatPro.pdf)
 
 À noter&nbsp;: il est recommandé d'ouvrir les fichiers proposés au format ODT avec LibreOffice&nbsp;; la restitution avec d'autres logiciels pourrait être dégradée.
 
