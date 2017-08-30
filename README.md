@@ -1,480 +1,480 @@
-# Créer des documents bureautiques accessibles
+# Creating accessible office documents
 
-## Sommaire
+## Table of contents
 
-  * [Sommaire](#sommaire)
-  * [Introduction](#introduction)
-    * [Avant-propos](#avant-propos)
-    * [Le RGAA et les documents bureautiques](#le-rgaa-et-les-documents-bureautiques)
-    * [Présentation des guides](#pr%C3%A9sentation-des-guides)
-    * [À qui s’adressent ces guides ?](#%C3%A0-qui-s%E2%80%99adressent-ces-guides%C2%A0)
-    * [Les dispositifs techniques pour accéder aux contenus](#les-dispositifs-techniques-pour-acc%C3%A9der-aux-contenus)
-  * [Bien structurer un document](#bien-structurer-un-document)
-    * [Introduction](#introduction-1)
-    * [Titres](#titres)
-    * [Paragraphes](#paragraphes)
-    * [Listes](#listes)
-    * [Notes de bas de page](#notes-de-bas-de-page)
-    * [Numérotation des pages](#num%C3%A9rotation-des-pages)
-    * [Colonnes](#colonnes)
-    * [Objets flottants](#objets-flottants)
-    * [Ordre de lecture](#ordre-de-lecture)
-    * [Zones de texte](#zones-de-texte)
-    * [Masque de diapositives](#masque-de-diapositives)
-    * [En-têtes et pieds de page dans les diapositives](#en-t%C3%AAtes-et-pieds-de-page-dans-les-diapositives)
-  * [Utiliser une présentation appropriée](#utiliser-une-pr%C3%A9sentation-appropri%C3%A9e)
-    * [Introduction](#introduction-2)
-    * [Couleurs](#couleurs)
-    * [Polices](#polices)
-    * [Styles](#styles)
-    * [Thèmes](#th%C3%A8mes)
-    * [Modèles](#mod%C3%A8les)
-  * [Langue et langage](#langue-et-langage)
-    * [Introduction](#introduction-3)
-    * [Langue du document](#langue-du-document)
-    * [Abréviations, sigles et acronymes](#abr%C3%A9viations-sigles-et-acronymes)
-    * [Expressions inhabituelles, idiomatiques ou spécialisées](#expressions-inhabituelles-idiomatiques-ou-sp%C3%A9cialis%C3%A9es)
-    * [Mots ou passages dans une langue étrangère](#mots-ou-passages-dans-une-langue-%C3%A9trang%C3%A8re)
-  * [Donner une alternative aux éléments non-textuels](#donner-une-alternative-aux-%C3%A9l%C3%A9ments-non-textuels)
-    * [Introduction](#introduction-4)
-    * [Images](#images)
-    * [Images-textes](#images-textes)
-    * [Graphiques](#graphiques)
-    * [Formules mathématiques](#formules-math%C3%A9matiques)
-    * [Fichiers multimédia](#fichiers-multim%C3%A9dia)
-  * [Créer des tableaux accessibles](#cr%C3%A9er-des-tableaux-accessibles)
-    * [Introduction](#introduction-5)
-    * [Tableaux de mise en forme](#tableaux-de-mise-en-forme)
-    * [Tableaux de données](#tableaux-de-donn%C3%A9es)
-      * [Formatage](#formatage)
-      * [En-têtes de lignes et de colonnes](#en-t%C3%AAtes-de-lignes-et-de-colonnes)
-      * [Légende et alternatives textuelles](#l%C3%A9gende-et-alternatives-textuelles)
-    * [Copier-coller des tableaux depuis un classeur Excel](#copier-coller-des-tableaux-depuis-un-classeur-excel)
-  * [Créer des aides à la navigation](#cr%C3%A9er-des-aides-%C3%A0-la-navigation)
-    * [Introduction](#introduction-6)
-    * [Tables des matières, des illustrations et des tableaux](#tables-des-mati%C3%A8res-des-illustrations-et-des-tableaux)
-    * [Signets](#signets)
-    * [Renvois](#renvois)
-    * [Liens](#liens)
-    * [Citations](#citations)
-  * [Créer des formulaires accessibles](#cr%C3%A9er-des-formulaires-accessibles)
-  * [Définir les propriétés du document](#d%C3%A9finir-les-propri%C3%A9t%C3%A9s-du-document)
-  * [Rendre accessibles les présentations orales](#rendre-accessibles-les-pr%C3%A9sentations-orales)
-  * [Vérifier l’accessibilité](#v%C3%A9rifier-l%E2%80%99accessibilit%C3%A9)
-  * [Publier le document dans d’autres formats](#publier-le-document-dans-d%E2%80%99autres-formats)
-  * [Licence](#licence)
+<!-- MarkdownTOC -->
+
+- [Introduction](#introduction)
+	- [Foreword](#foreword)
+	- [The RGAA and Office Documents](#the-rgaa-and-office-documents)
+	- [Presentation of guides](#presentation-of-guides)
+	- [Who are these guides for?](#who-are-these-guides-for)
+	- [Technical devices used to access content](#technical-devices-used-to-access-content)
+- [How to structure a document](#how-to-structure-a-document)
+	- [Introduction](#introduction-1)
+	- [Headings](#headings)
+	- [Paragraphs](#paragraphs)
+	- [Lists](#lists)
+	- [Footnotes](#footnotes)
+	- [Page Numbers](#page-numbers)
+	- [Columns](#columns)
+	- [Floating Objects](#floating-objects)
+	- [Reading order](#reading-order)
+	- [Text areas](#text-areas)
+	- [Slide Master](#slide-master)
+	- [Headers and footers in slides](#headers-and-footers-in-slides)
+- [Using an appropriate layout](#using-an-appropriate-layout)
+	- [Introduction](#introduction-2)
+	- [Colors](#colors)
+	- [Fonts](#fonts)
+	- [Styles](#styles)
+	- [Themes](#themes)
+	- [Template](#template)
+- [Language](#language)
+	- [Introduction](#introduction-3)
+	- [Language of the document](#language-of-the-document)
+	- [Abbreviations and acronyms](#abbreviations-and-acronyms)
+	- [Unusual, idiomatic or specialized expressions](#unusual-idiomatic-or-specialized-expressions)
+	- [Words or passages in a foreign language](#words-or-passages-in-a-foreign-language)
+- [Giving an alternative to non-textual elements](#giving-an-alternative-to-non-textual-elements)
+	- [Introduction](#introduction-4)
+	- [Images](#images)
+	- [Images of texts](#images-of-texts)
+	- [Charts](#charts)
+	- [Mathematical formulas](#mathematical-formulas)
+	- [Multimedia files](#multimedia-files)
+- [Creating accessible tables](#creating-accessible-tables)
+	- [Introduction](#introduction-5)
+	- [Layout tables](#layout-tables)
+	- [Data Tables](#data-tables)
+	- [Copying and pasting tables from spreadsheets](#copying-and-pasting-tables-from-spreadsheets)
+- [Creating navigation aids](#creating-navigation-aids)
+	- [Introduction](#introduction-6)
+	- [Tables of contents, figures and tables](#tables-of-contents-figures-and-tables)
+	- [Bookmarks](#bookmarks)
+	- [Cross-reference](#cross-reference)
+	- [Links](#links)
+	- [Citations](#citations)
+- [Creating accessible forms](#creating-accessible-forms)
+- [Setting document properties](#setting-document-properties)
+- [Making oral presentations accessible](#making-oral-presentations-accessible)
+- [Checking accessibility](#checking-accessibility)
+- [Publishing the document in other formats](#publishing-the-document-in-other-formats)
+- [Licence](#licence)
+
+<!-- /MarkdownTOC -->
 
 ## Introduction
 
-### Avant-propos
+### Foreword
 
-La loi française n°2005-102 du 11 février 2005 pour l’égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées, fait de l’accessibilité une exigence pour tous les services de communication publique en ligne de l’État, des collectivités territoriales et des établissements publics qui en dépendent.
+French law n° 2005-102, of 11 February 2005, for equality of rights and opportunities, participation and citizenship of people with disabilities, makes accessibility a requirement for all public online communication services, for the State, local and regional authorities and the public institutions that depend on them.
 
-Le RGAA (Référentiel Général d’Accessibilité pour les Administrations) a pour objectif de favoriser l’accessibilité des contenus diffusés sous forme numérique. En 2014, le RGAA a connu une refonte pour le mettre à jour et le rendre plus opérationnel. Les administrations françaises sont désormais tenues de se référer au RGAA&nbsp;3&nbsp;2016.
+The RGAA (General Accessibility Framework for Administrations) aims to promote accessibility of the contents available in digital form. In 2014, the RGAA was redesigned to be up-to-date and more operational. The French administrations currently ought to refer to the RGAA 3.
 
-Afin de répondre aux besoins de divers groupes et de différents contextes, trois niveaux de conformité ont été définis&nbsp;: A (le plus bas), AA et AAA. Le niveau légalement attendu est le niveau double A (AA). Les critères de succès associés au niveau AAA peuvent être pris en compte dans certains contextes, lorsque cela est possible et pertinent.
+To meet the needs of diverse groups and contexts, three levels of compliance have been defined: A (lowest), AA and AAA. The level legally expected is level double-A (AA). Success criteria associated with the AAA level may be taken into account in certain contexts where possible and relevant.
 
-### Le RGAA et les documents bureautiques
+### The RGAA and Office Documents
 
-Le RGAA s’applique à tout document ou application disponible en ligne: les sites Internet, Intranet et les applications web, mais aussi les contenus proposés en téléchargement.
+The RGAA applies to any document or application available online: websites, Intranet and web applications, but also the contents downloadable as separate files.
 
-Dans la thématique Consultation du RGAA, le critère 13.7 (niveau A) stipule que «&nbsp;chaque document bureautique en téléchargement possède, si nécessaire, une version accessible&nbsp;». La conformité à ce critère peut être atteinte notamment en fournissant une version HTML accessible ou en rendant accessible le document dans le format proposé en téléchargement.
+In the Consultation category of the RGAA, [criterion 13.7](https://disic.github.io/rgaa_referentiel_en/criteria.html#crit-13-7) (Level A) states that "each office document that can be downloaded [must] have an accessible version if necessary". Compliance with this criterion can be achieved in particular by providing an accessible HTML version or by making the document accessible in the format proposed for download.
 
-### Présentation des guides
+### Presentation of guides
 
-Ces guides d'accompagnement présentent les considérations et principes permettant de créer un document bureautique accessible, assortis de conseils et procédures non normatifs pour les mettre en œuvre.
+These companion guides present the considerations and principles for creating an accessible office document, with non-normative guidance and procedures for implementing them.
 
-Le présent document décrit les principes généraux à appliquer pour produire des contenus bureautiques accessibles. Ces principes sont déclinés sous forme de procédures spécifiques, présentées et illustrées dans des guides dédiés téléchargeables, pour les logiciels suivants&nbsp;:
+This document describes the general principles for the production of accessible office documents. These principles are detailed in the form of specific procedures, presented and illustrated in dedicated downloadable guides, for the following applications:
 
-* Microsoft <span lang="en">Word</span> 2013&nbsp;: [ODT - 3,2Mo](./MicrosoftOfficeWord.odt), [PDF - 2,7Mo](./MicrosoftOfficeWord.pdf)
-* Microsoft <span lang="en">Excel</span> 2013&nbsp;: [ODT - 2Mo](./MicrosoftOfficeExcel.odt), [PDF - 2Mo](./MicrosoftOfficeExcel.pdf)
-* Microsoft <span lang="en">PowerPoint</span> 2013&nbsp;: [ODT - 1,7Mo](./MicrosoftOfficePowerPoint.odt), [PDF - 1,7Mo](./MicrosoftOfficePowerPoint.pdf)
-* LibreOffice <span lang="en">Writer</span> 4.3&nbsp;: [ODT - 2Mo](./LibreOfficeWriter.odt), [PDF - 1,9Mo](./LibreOfficeWriter.pdf)
-* LibreOffice <span lang="en">Calc</span> 4.3&nbsp;: [ODT - 1,7Mo](./LibreOfficeCalc.odt), [PDF - 1,6Mo](./LibreOfficeCalc.pdf)
-* LibreOffice <span lang="en">Impress</span> 4.3&nbsp;: [ODT - 1,4Mo](./LibreOfficeImpress.odt), [PDF - 1,5Mo](./LibreOfficeImpress.pdf)
-* <span lang="en">Adobe Acrobat Pro Document Cloud</span> 2015&nbsp;: [ODT - 3,2Mo](./AdobeAcrobatPro.odt), [PDF - 2,9Mo](./AdobeAcrobatPro.pdf)
-
-À noter&nbsp;: il est recommandé d'ouvrir les fichiers proposés au format ODT avec LibreOffice&nbsp;; la restitution avec d'autres logiciels pourrait être dégradée.
-
-### À qui s’adressent ces guides ?
-
-Ces guide sont destinés à tout professionnel des services de l’État, des collectivités territoriales, des agences, des établissements publics, des entreprises publiques ou à toute personne souhaitant&nbsp;:
-
-* Produire des documents bureautiques accessibles&nbsp;;
-* Améliorer l’accessibilité de documents bureautiques existants&nbsp;;
-* Tester le niveau d’accessibilité de documents bureautiques déjà créés.
+* [Microsoft Word 2016 (ODT - 6.7 MB](./ MicrosoftOfficeWord.odt)
+* [Microsoft Excel 2016 (ODT - 2.4 MB](./ MicrosoftOfficeExcel.odt)
+* [Microsoft PowerPoint 2016 (ODT - 3.2 MB](./ MicrosoftOfficePowerPoint.odt)
+* [LibreOffice Writer 5.2 (ODT - 4.6 MB)](./LibreOfficeWriter.odt)
+* [LibreOffice Calc 5.2 (ODT - 3.1 MB)](./ LibreOfficeCalc.odt)
+* [LibreOffice Impress 5.2 (ODT - 2.6 MB)](./LibreOfficeImpress.odt)
+*  [Adobe Acrobat Pro Document Cloud 2017 (ODT - 5.9 MB)](./ AdobeAcrobatPro.odt)
 
 
-### Les dispositifs techniques pour accéder aux contenus
+### Who are these guides for?
 
-Un document est accessible s’il peut être consulté par n’importe quel utilisateur, quel que soit l’outil informatique dont il dispose. De plus en plus d’utilisateurs sont amenés à se servir de technologies d'assistance pour surmonter des barrières à l’accès aux contenus bureautiques ou web. Ces solutions techniques comprennent&nbsp;:
+These guides are intended for all professionals in government departments, local authorities, agencies, public institutions, public enterprises or anyone wishing to:
 
-* Des aides logicielles (lecteurs d'écran, logiciels de reconnaissance vocale/dictée, etc.)&nbsp;;
-* Des aides matérielles (souris adaptées, trackballs, afficheurs braille, etc.).
-
-Les contenus et les applications doivent être compatibles avec ces diverses technologies d'assistance, leurs fonctionnalités et leurs usages.
-
-## Bien structurer un document
-
-### Introduction
-
-La notion de structure est centrale à tout document. En plus de faciliter la lecture, la mise en forme typographique (police, taille, espacement, etc.) et la position des éléments transmettent au lecteur une première hiérarchisation du contenu.
-
-À condition d'être appliqués correctement, l'utilisation de styles – un ensemble de caractéristiques de mise en forme –  permet d'attribuer rapidement et facilement une structure au document  tout en garantissant que cette structure soit accessible et navigable par les utilisateurs de technologies d’assistance.
-
-Lors de la composition du document, l’utilisation des fonctionnalités de mise en page (disposition du texte en colonnes, ancrage des objets insérés) permet d’assurer que l’ensemble des éléments dont le document est composé suivent un ordre logique, et qu’ils soient facilement atteignables au clavier et facilement consultables grâce aux technologies d’assistance.
-
-### Titres
-
-Les premiers éléments de structuration permettant de hiérarchiser un texte sont les titres et les sous-titres.
-
-Au départ, à tout texte d'un nouveau document est attribué un style par défaut. Ensuite différents jeux de styles rapides sont proposés. Il est nécessaire d'appliquer les styles appropriés aux titres, pour qu'ils soient correctement identifiés par les technologies d'assistance.
-
-Il est également possible de créer ses propres styles de titres et de les sauvegarder.
-
-À noter&nbsp;:
-
-* L'application de styles pour les titres doit impérativement respecter la hiérarchie sans sauter de niveau de titre&nbsp;;
-* Il ne faut jamais utiliser les styles de titres uniquement à des fins de mise en forme&nbsp;;
-* En règle générale, les titres ne doivent pas dépasser une ligne&nbsp;;
-* Pour faciliter la navigation dans des documents plus longs, il faudrait au moins un titre toutes les deux pages&nbsp;;
-* Il est possible de vérifier que les styles ont été correctement appliqués en visualisant la table des matières, en utilisant le mode plan ou le volet de navigation selon les logiciels utilisés.
+* Produce accessible office documents;
+* Improve the accessibility of existing office documents;
+* Test the level of accessibility of office documents already created.
 
 
-### Paragraphes
+### Technical devices used to access content
 
-Tout texte de paragraphe doit être identifié comme tel.
+A document is accessible if it can be accessed by any user, regardless of the computer tool being used. More and more users are using assistive technologies to overcome barriers to accessing office documents or web content. These technical solutions include
 
-Des retours à la ligne à répétition insérés pour aérer un document sont à éliminer car une succession de paragraphes vides peut être perçue par l’utilisateur d’un lecteur d'écran ou d’une synthèse vocale comme signalant la fin du document. Des espaces vides peuvent être générés par l'application de styles intégrant des écarts plus ou moins importants selon les besoins.
+* Software assistive technologies (screen readers, voice recognition / dictation software, etc.);
+* Hardware assistive technologies (adapted mice, trackballs, Braille displays, etc.).
 
-De même, lorsque l'on souhaite continuer la rédaction sur une nouvelle page, il faut insérer un saut de page plutôt qu'une succession de retours à la ligne.
+Content and applications must be compatible with these various assistive technologies, their functionalities and uses.
 
-### Listes
-
-Des listes créées uniquement en insérant des tirets sous forme de signes «&nbsp;-&nbsp;» ou autres caractères spéciaux ne seront pas restituées correctement par certaines technologies d’assistance qui les interpréteront comme une suite de paragraphes distincts. Il est alors impératif de créer des listes identifiées comme telles, en utilisant les styles de listes à puces ou de listes numérotées.
-
-### Notes de bas de page
-
-Les notes de bas de page et les notes de fin de document contiennent des informations complémentaires. Elles sont constituées de deux parties liées, à savoir la marque d'appel et le texte de la note correspondant.
-
-L'utilisateur pourra naviguer entre texte et note à condition qu'elles soient insérées correctement.
-
-### Numérotation des pages
-
-La numérotation de pages fournit à tout utilisateur, y compris aux utilisateurs de technologies d'assistance, un point de repère important. La fonctionnalité d'insertion de numéros de page doit être doit être utilisée&nbsp;: le numéro ne doit pas être positionnée manuellement en haut ou en bas de la page.
-
-### Colonnes
-
-Des colonnes créées avec la touche tabulation ou par l'artifice d'un tableau peuvent causer des difficultés aux utilisateurs de technologies d’assistance. Il est nécessaire d'utiliser les fonctionnalités appropriées pour organiser une partie du document en colonnes distinctes et facilement navigables.
-
-### Objets flottants
-
-Lorsque des images ou des objets sont insérés dans un document, ils sont par défaut positionnés relativement à la page et restent à la même position lorsque l'utilisateur parcourt la page. Ce comportement rend ces "objets flottants", difficilement sélectionnables au clavier. Il convient de s'assurer que les objets insérés dans un document (images, formes, etc.) restent associés au texte auxquels ils font référence en définissant un point d'ancrage.
-
-### Ordre de lecture
-
-Les technologies d’assistance parcourent le document de manière linéaire.
-
-Il faut prendre quelques précautions pour que l’ordre de lecture soit cohérent&nbsp;:
-
-* Ne pas utiliser les tableaux de données pour mettre en forme les contenus (textes ou images) du document&nbsp;;
-* Ne pas utiliser les touches de tabulation pour créer des colonnes&nbsp;;
-* Ne pas utiliser des zones de texte éditables pour mettre en valeur certains contenus, mais plutôt des styles.
-
-### Zones de texte
-
-Les zones de texte posent souvent problème car elles peuvent être ignorées par certains lecteurs d’écran. Pour cette raison, il est préférable de créer un encadré en appliquant un style.
-
-### Masque de diapositives
-
-Lorsqu'on créé des diapositives, il est utile de créer un masque de diapositive, qui représente la diapositive «&nbsp;maîtresse&nbsp;» qui stocke toutes les informations relatives à la mise en page, y compris la taille et le positionnement des zones de contenu. Les styles de chaque nouvelle diapositive sont hérités de ce masque.
-
-Tout masque créé ou utilisé doit répondre aux exigences d’accessibilité présentées dans ce guide.
-
-Il est préférable de créer un masque de diapositives avant de commencer à créer la présentation afin que toute nouvelle diapositive soit basée sur un ou des masques accessibles.
-
-### En-têtes et pieds de page dans les diapositives
-
-Les en-têtes et pieds de page ne sont pas lus automatiquement par les lecteurs d’écran. Pour cette raison, il faut éviter de mettre des informations importantes dans ces zones.
-
-## Utiliser une présentation appropriée
+## How to structure a document
 
 ### Introduction
 
-La complexité visuelle d’un document (la quantité, la densité et la variété de polices, de couleurs, de textes, etc.) peut jouer un rôle décisif dans la compréhension de son contenu. Pour les utilisateurs navigants à l’aide de technologies d’assistance, un document d’apparence complexe s’appuie souvent sur une structure complexe et peut nécessiter plus de temps à appréhender. Si la compréhension de certains contenus passe uniquement par la couleur ou la forme, la taille ou la position, ces lecteurs risquent de passer à côté de certaines informations.
+The notion of structure is central to any document. In addition to facilitating reading, formatting (font, size, spacing, etc.) and the position of the elements convey to the reader a first glimpse of the hierarchy of the content.
 
-Lors de la composition du document, l’utilisation de styles et de polices standards permet d’en assurer la lisibilité pour tous.
+When applied correctly, the use of styles - a set of formatting features - allows a structure to be quickly and easily attributed to the document, while ensuring that the structure is accessible and navigable by users of assistive technologies.
 
-### Couleurs
+When composing the document, the use of layout features (layout of text in columns, anchoring of inserted objects) makes it possible to ensure that all the elements of the document follow a logical order, and that they are easily reachable via the keyboard and easily read with assistive technologies.
 
-Si une information est transmise uniquement par la couleur, les utilisateurs de lecteurs d'écran (personnes aveugles ou malvoyantes) ainsi que certaines personnes daltoniennes n'y auront pas accès. Toute information véhiculée par la couleur doit donc être aussi disponible via un autre moyen (par exemple un style approprié).
+### Headings
 
-Pour des informations données par la couleur dans du texte, la solution consiste à ajouter un texte explicatif. Par exemple, dans une procédure indiquant que les éléments en rouge sont obligatoires, il faudra&nbsp;:
+The primary elements that allow to  structure text are headings and sub-headings.
 
-* Numéroter les éléments&nbsp;;
-* Ajouter une note du type&nbsp;: «&nbsp;Les éléments numérotés de 2 à 4 (en rouge) sont obligatoires&nbsp;».
+To begin with, to any text of a new document is assigned a default style. Then different sets of quick styles are proposed. It is necessary to apply the appropriate styles to the headings, so that they are correctly identified by the assistive technologies.
 
-Le contraste entre la couleur du fond et celle du texte doit également être suffisant pour rendre la lecture du document confortable. Le RGAA stipule que le rapport de contraste entre un texte sans effet de graisse et son arrière-plan doit être de 4,5:1 jusqu'à 150% de la taille de police par défaut, et de 3:1 au-delà. Pour les textes en gras, le même rapport de contraste est nécessaire jusqu'à 120% de la taille de police par défaut, et 3:1, au-delà. Cette règle s’applique aussi bien aux textes qu’aux graphiques et aux images.
+It is also possible to create your own heading styles and save them.
 
-Un vérificateur de contraste permet de déterminer si les couleurs utilisées ont un contraste suffisant. Le <span lang="en">Color Contrast Analyser</span> du Paciello Group peut être téléchargé gratuitement à l'adresse suivante&nbsp;: [https://www.paciellogroup.com/resources/contrastanalyser/](https://www.paciellogroup.com/resources/contrastanalyser/)
+Please note:
 
-Un vérificateur en ligne est également proposé par Tanaguru à l'adresse&nbsp;: [http://contrast-finder.tanaguru.com/?lang=fr](http://contrast-finder.tanaguru.com/?lang=fr)
+* The application of styles for headings must imperatively respect the contents hierarchy, without skipping levels;
+* Heading styles should never be used for formatting purposes only;
+* Generally, headings should not exceed one line;
+* To facilitate browsing in longer documents, there should be at least one heading every two pages;
+* It is possible to verify that the styles have been correctly applied by viewing the table of contents, using the plan view or the navigation pane, depending on the software used.
 
 
-### Polices
+### Paragraphs
 
-Pour les raisons citées ci-dessus, il est obligatoire d’utiliser l’application de styles plutôt que les outils de formatage de caractères pour mettre en forme tout élément ayant une valeur sémantique (titres, éléments de liste, notes, etc.).
+Any paragraph text must be identified as such.
 
-Dans la mesure du possible, il convient de privilégier certaines normes de mise en forme pour faciliter la lecture et rendre les documents lisibles dans les principaux éditeurs de texte&nbsp;:
+Repeated line breaks inserted to space the text of a document are to be avoided, because a succession of empty paragraphs can be perceived by the user of a screen reader or a speech synthesis as indicating the end of the document. Blank spaces can be made by applying styles with larger or smaller margins and paddings as required.
 
-* Des polices standards créées dans le but de faciliter la lecture&nbsp;: Arial, Calibri, Cambria, Constantia, Garamond, Georgia, Helvetica, Times New Roman, Trebuchet MS et Verdana&nbsp;;
-* Des tailles de police comprises entre 12 et 18 points pour le corps du texte.
-* Un espacement entre les caractères normal ou élargi, plutôt que condensé.
+Similarly, when you want to continue writing on a new page, you must insert a page break rather than a succession of line breaks.
 
-Il faut éviter de proposer&nbsp;:
+### Lists
 
-* de longues portions de texte en majuscules, italique ou soulignée&nbsp;;
-* du texte animé ou défilant.
+Lists created only by inserting dashes in the form of "-" characters, or other special characters will not be rendered correctly by certain assistive technologies, that will interpret them as a sequence of separate paragraphs. It is then imperative to create lists identified as such, using styles of bulleted lists or numbered lists.
+
+### Footnotes
+
+Footnotes and endnotes contain additional information. They are made up of two related parts, namely the footnote (or endnote) indicator and the text of the corresponding note.
+
+The user can navigate between text and notes, provided they have been inserted correctly.
+
+### Page Numbers
+
+Page numbers provide important landmarks for any user, including users of assistive technology. The page number insertion feature should be used, instead of inserting manually a number at the top or bottom of the page.
+
+### Columns
+
+Mock-columns, created with the tab key or using a data table, can cause difficulties for assistive technology users. It is necessary to use the appropriate functionality to organize a part of the document into separate and easily navigable columns.
+
+### Floating Objects
+
+When images or objects are inserted into a document, they are positioned relatively to the page by default, and remain in the same position when the user browses the page. This behavior makes these "floating objects" difficult to select through a keyboard. It is important to ensure that the objects inserted in a document (images, shapes, etc.) remain associated with the text to which they refer, by defining an anchor point.
+
+### Reading order
+
+Assistive technologies scan the document in a linear fashion.
+
+Some precautions need to be taken so that the reading order is consistent:
+
+* Do not use data tables for layout of contents (text or images) in the document;
+* Do not use tab keys to create columns
+* Do not use editable text areas to highlight some given content, but use styles instead.
+
+### Text areas
+
+Text areas are often problematic because they can be ignored by some screen readers. For this reason, it is better to create a box by applying a style.
+
+### Slide Master
+
+When creating slides, it is useful to create a slide master, which represents the "template" slide that stores all page layout information, including the size and positioning of the content areas. The styles for each new slide are inherited from this master.
+
+Any master created or used must meet the accessibility requirements outlined in this guide.
+
+It is best to create a slide master before you start creating the presentation, so that any new slides are based on one or more accessible masters.
+
+### Headers and footers in slides
+
+Headers and footers are not read automatically by screen readers. For this reason, important information in these areas should be avoided.
+
+## Using an appropriate layout
+
+### Introduction
+
+The visual complexity of a document (the quantity, density and variety of fonts, colors, texts, etc.) can play a decisive role in understanding its content. For users browsing with assistive technologies, a complex document often relies on a complex structure and may require more time to apprehend. If the understanding of certain content is conveyed only through color, shape, size or position, these readers may miss some information.
+
+When composing the document, the use of standard styles and fonts improves its readability.
+
+### Colors
+
+If information is conveyed only through color, screen reader users (blind or visually impaired users, in general) and some color blind people will not be able to access it. Any information conveyed through color must therefore also be available via another means (for example, an appropriate style).
+
+For information provided through color in text, the solution is to add an explanatory text. For example, in a procedure indicating that the items in red are mandatory, you will need to:
+
+* Number the items
+* Add a note like "Items numbered 2 to 4 (in red) are required".
+
+The contrast between the background and text colors must also be sufficient to make the reading of the document comfortable. The RGAA states that the contrast ratio between a non-bold text and its background should be 4.5:1 up to 150% of the default font size, and 3:1 beyond. For bold text, a 4.5:1 contrast ratio is required up to 120% of the default font size, and 3:1 beyond. This applies to text, graphics and images.
+
+A contrast checker is used to determine if colors have sufficient contrasts. The [Colour Contrast Analyser](https://www.paciellogroup.com/resources/contrastanalyser/), provided by the Paciello Group, can be downloaded free of charge. 
+
+Among others, you may also use this [online checker proposed by Tanaguru](http://contrast-finder.tanaguru.com/?lang=en).
+
+
+### Fonts
+
+For the reasons given above, it is compulsory to use the styling features rather than the character formatting tools, to format any element with a semantic value (headings, list elements, notes, etc.).
+
+Whenever possible, some formatting standards should be prioritized to facilitate reading, and make the documents legible in the main text editors.
+
+* Standard fonts created for ease of reading: Arial, Calibri, Cambria, Constantia, Garamond, Georgia, Helvetica, Times New Roman, Trebuchet MS, and Verdana;
+* Font sizes between 12 and 18 points for the body text;
+* Normal or expanded character spacing, rather than condensed.
+
+Avoid:
+
+* Long chunks of text in uppercase, italic or underlined fonts
+* Animated or scrolling text.
 
 ### Styles
 
-Les styles permettent de donner une structure hiérarchique au document mais également de mettre en évidence certains types de contenus (citation, légende, etc.). Afin de permettre aux lecteurs de comprendre le sens du formatage, il convient d'utiliser les styles plutôt que d'utiliser directement les outils de formatage de caractères.
+Styles can be used to give a hierarchical structure to the document, but also to highlight certain types of content (quote, caption, etc.). In order to allow readers to understand the meaning of formatting, it is appropriate to use styles rather than directly using character formatting tools.
 
-### Thèmes
+### Themes
 
-Un thème est un ensemble de couleurs, de polices et d'effets de mise en page qui peuvent être appliqués au document. Les logiciels proposent de nombreux thèmes prédéfinis. Il est également possible d’en personnaliser pour répondre aux exigences du RGAA en termes de couleurs et de polices.
+A theme is a set of colors, fonts, and layout effects that can be applied to the document. The edition applications generally offer many predefined themes. It is also possible to customize it to meet the requirements of the RGAA in terms of colors and fonts.
 
-### Modèles
+### Template
 
-Un modèle sert de base aux nouveaux documents et contient des styles de formatage prédéfinis.
+A template serves as the basis for new documents and contains predefined formatting styles.
 
-Il est possible de créer son propre modèle accessible à partir d'un contenu vierge, ou d'éditer et de modifier des modèles préexistants pour prendre en compte les recommandations d'accessibilité.
+You can create your own accessible template from blank content, or edit and modify pre-existing templates to accommodate accessibility recommendations.
 
-## Langue et langage
-
-### Introduction
-
-Quand les contenus d'un document sont bien identifiés, organisés selon une logique cohérente, et aérés, ils sont plus faciles à consulter. De même, les documents dotés d'en-têtes clairs, de paragraphes courts et de phrases concises, simples, et sans jargon seront accessibles au plus grand nombre.
-
-Quand il est nécessaire d’employer des termes techniques, des mots dans une langue étrangère ou des abréviations, il est important de donner au lecteur les indications utiles à leur bonne compréhension.
-
-### Langue du document
-
-La langue sélectionnée pour le document détermine le dictionnaire utilisé pour la vérification orthographique, les synonymes et la césure des mots, ainsi qu'un certain nombre de règles de formatage. Pour les logiciels de synthèse vocale, elle détermine également la manière dont les contenus sont prononcés. Il est alors impératif de définir une langue pour tout document, et de s'assurer que tout mot ou passage dans une autre langue soit correctement identifié.
-
-### Abréviations, sigles et acronymes
-
-Souvent, il n’existe pas de mécanisme pour identifier les acronymes, les sigles ou les abréviations. Il est toutefois possible de faciliter la compréhension en suivant quelques recommandations&nbsp;:
-
-* La signification des abréviations, sigles et acronymes doit être indiquée en clair dans le texte dès la première occurrence, suivi par l’abréviation, sigle ou acronyme entre parenthèses. Par exemple&nbsp;: Régie Autonome des Transports Parisien (RATP)&nbsp;;
-* Il est possible de relier un  acronyme, un sigle ou une abréviation avec un glossaire via un signet ou un lien hypertexte.
-
-
-### Expressions inhabituelles, idiomatiques ou spécialisées
-
-Quand il est nécessaire d’employer des expressions inhabituelles, idiomatiques ou spécialisées, il faut faire en sorte de fournir une définition accessible. Ces définitions peuvent être proposées dans les notes de pieds de page ou de fin de document, ou regroupées dans un glossaire et reliées par des signets.
-
-
-### Mots ou passages dans une langue étrangère
-
-Les mots en langue étrangère doivent être correctement signalés afin que les synthèses vocales les prononcent correctement.
-
-Il convient de faire en sorte que la langue étrangère soit sélectionnée comme langue d’édition pour le document puis de signaler chaque changement de langue. Aucun changement visuel n’aura lieu&nbsp;; seules les technologies d’assistance auront accès à cette information.
-
-## Donner une alternative aux éléments non-textuels
+## Language 
 
 ### Introduction
 
-Les éléments non-textuels tiennent une place de plus en plus importante dans les documents bureautiques&nbsp;: des photos, des cartes, des graphiques et des formules mathématiques viennent enrichir des documents et transmettre de l’information aux lecteurs.
+When the contents of a document are well identified, organized according to a coherent logic, and well-spaced, they are easier to consult. Similarly, documents with clear headings, short paragraphs and concise, simple, jargon-free sentences will be accessible to as many people as possible.
 
-Pour les éléments non-textuels qui véhiculent une information non présentée sous forme de texte à leur proximité, cette information doit être décrite dans un texte de remplacement. Sans description appropriée, ces éléments demeurent non-perceptibles par les technologies d’assistance qui signaleront la présence d’un élément graphique sans aucune autre information.
+When it is necessary to use technical terms, words in a foreign language or abbreviations, it is important to give the reader the information necessary for their proper understanding.
 
-Il est possible de créer un texte de remplacement qui sera restitué au lecteur par les technologies d’assistance. Les outils varient en fonction de la nature du contenu non-textuel.
+### Language of the document
+
+The language selected for the document determines the dictionary used for spell checking, synonyms and hyphenation, as well as a number of formatting rules. For text-to-speech software, it also determines how content is spoken. It is therefore imperative to define a language for any document, and to ensure that any word or passage in another language is correctly identified.
+
+### Abbreviations and acronyms
+
+Often, there is no mechanism for identifying acronyms or abbreviations. It is however possible to facilitate understanding by following a few recommendations:
+
+* The meaning of abbreviations and acronyms shall be indicated in clear text in their first occurrences, followed by the abbreviation or acronym between parentheses. For example: National Aeronautics and Space Administration (NASA);
+* You can link an acronym or an abbreviation to a glossary via a bookmark or a hyperlink.
+
+
+### Unusual, idiomatic or specialized expressions
+
+When it is necessary to use unusual, idiomatic or specialized expressions, an accessible definition must be provided. These definitions can be proposed in the footnotes or endnotes, or grouped in a glossary and linked to the expressions through bookmarks.
+
+
+### Words or passages in a foreign language
+
+Words in a foreign language must be correctly marked so that the speech synthesizers pronounce them correctly.
+
+It is important to ensure that the foreign language is selected as an editing language for the document, and then to indicate each language change. No visual changes will occur; only assistive technologies will have access to this information.
+
+## Giving an alternative to non-textual elements
+
+### Introduction
+
+Non-textual elements are becoming increasingly important in office documents. Photos, maps, graphics and mathematical formulas enrich documents and convey information to readers.
+
+For non-textual elements that convey information not presented as text in their proximity, this information must be described in a replacement text. Without proper description, these elements can't be perceived by assistive technologies, that will signal the presence of a graphic element without any other information.
+
+It is possible to create a replacement text that will be returned to the reader by assistive technologies. The tools vary according to the nature of the non-textual content.
 
 ### Images
 
-Il convient de se poser 3 questions avant de choisir le texte qui sera annoncé à la place de l'image&nbsp;:
+You should ask yourself 3 questions before choosing the text that will be rendered in place of the image:
 
-* L'image est-elle purement décorative, ne transmettant aucune information et n’ayant pas de fonction&nbsp;?
-* L'élément véhicule-t-il une information&nbsp;?
-* L'image a-t-elle une fonction (par exemple, une image servant de lien)&nbsp;?
+* Is the image purely decorative, not conveying any information and having no function?
+* Does the item convey information?
+* Does the image have a function (for example, a picture serving as a link)?
 
-Si l’image est purement décorative, il ne faut pas lui attribuer de texte de remplacement.
+If the image is purely decorative, it should not be assigned alternative text.
 
-Si l’image véhicule une information, il faut lui associer un texte de remplacement. Cette alternative, qui fait également office de titre, doit décrire de manière succincte l’information véhiculée par l’image et sa signification dans le contexte. Pour une image qui sert de lien hypertexte, le texte de remplacement doit permettre de comprendre la fonction et la destination du lien. Les conditions de restitution de ce texte de remplacement nécessitent qu'il soit le plus court possible une longueur maximum de 80 caractères est fortement recommandée). Dès lors que l'information nécessite une alternative plus longue, il faut attribuer une description détaillée.
+If the image conveys information, it must be associated with a replacement text. This alternative, which also serves as a title, must succinctly describe the information conveyed by the image and its meaning in the context.
 
-Un texte de remplacement ne doit pas&nbsp;:
+For an image that serves as a hyperlink, the alternate text must be able to understand the function and the destination of the link. The conditions for returning this replacement text require that it be as short as possible (a maximum length of 80 characters is strongly recommended). If the information requires a longer alternative, a detailed description must be provided.
 
-* Dupliquer l’information de la légende&nbsp;;
-* Comprendre des informations relatives au droit d’auteur (par exemple, pour une photo, le nom du titulaire des droits et la date de la prise de vue)&nbsp;;
-* Commencer avec «&nbsp;image de&hellip;&nbsp;» ou «&nbsp;photo de&hellip;&nbsp;».
+A replacement text should not:
 
-Une description détaillée est parfois nécessaire lorsque les informations véhiculées par l'image sont plus complexes. Cela demande un travail d'interprétation de l'image.
+* Duplicate information in the caption;
+* Include copyright information (for example, for a photo, the name of the copyright holder and the date of the picture)
+* Start with "picture of&hellip;" or "photo of&hellip;".
 
-### Images-textes
+A detailed description is sometimes necessary when the information conveyed by the image is more complex. This requires an interpretation of the image.
 
-Il n'est pas recommandé d'utiliser des images textes lorsqu'il est possible de reproduire les mêmes effets en travaillant les styles du "vrai texte".
-Si le texte fait partie d'un logo ou d'un élément associé à l'identité graphique d'un organisme ou d'une société il convient de proposer une alternative textuelle à l'image en respectant les conseils proposés ci-dessus.
+### Images of texts
 
-### Graphiques
+It is not recommended to use images of texts when it is possible to reproduce the same effects by defining styles for "actual" text.
+If the text is part of a logo or an element associated with the graphic identity of an organization or a company, it is advisable to propose a textual alternative to the image, while following the recommendations above.
 
-Les données représentées dans des graphiques peuvent aller du très simple au très complexe. Dans un premier temps, il convient de créer un graphique accessible aux lecteurs daltoniens et malvoyants. Cela implique de&nbsp;:
+### Charts
 
-* Ne pas utiliser la couleur seule pour transmettre l’information (l'emploi de textures ou de formes permet de différencier les composants du graphique par exemple)&nbsp;;
-* Privilégier l'emploi de styles de lignes en pointillées afin d’améliorer la lisibilité&nbsp;;
-* Si nécessaire, remplacer les couleurs prédéfinies pour respecter les exigences de contraste.
+The data shown in charts can range from very simple to very complex. First, a chart accessible to color-blind and partially sighted readers should be created. This involves to:
 
-### Formules mathématiques
+* Not use color alone to convey information (use of textures or shapes to differentiate the components of the graph for example);
+* Emphasize the use of dashed line styles to improve readability;
+* If necessary, replace predefined colors to meet the contrast requirements.
 
-Selon les logiciels utilisés, il est nécessaire d'utiliser l'éditeur d'équation proposé nativement ou d'installer un <span lang="en">plug-in</span> supplémentaire qui se chargera de la conversion des formules mathématiques dans un format qui pourra être interprété par les technologies d'assistance (MathML). C'est par exemple le cas de l’extension payante MathType pour Office, qui permet d'éditer et d'exporter des équations&nbsp;: [http://www.dessci.com/en/products/mathtype/trial.asp](http://www.dessci.com/en/products/mathtype/trial.asp).
+### Mathematical formulas
 
-### Fichiers multimédia
+Depending on the software used, it may be possible to use the embedded equation editor, or necessary to install an additional  plug-in which will be able to convert mathematical formulas into a format that can be interpreted by assistive technologies (MathML). This is the case of the [MathType](http://www.dessci.com/en/products/mathtype/trial.asp) paid extension for Office, which allows you to edit and export equations.
 
-Un texte de remplacement doit accompagner toute vidéo ou séquence audio. Il est également nécessaire de fournir une transcription pour toute vidéo u séquence audio, et de s’assurer que les vidéos intègrent des sous-titres sous-titres embarqués («&nbsp;<span lang="en">closed captions</span>&nbsp;») pour les vidéos en ligne, ou directement dans le fichier vidéo.
+### Multimedia files
 
-Le rôle de la transcription est de fournir une alternative cohérente au contenu multimédia. Les lecteurs doivent avoir accès à toutes les informations véhiculés par le fichier vidéo ou audio, y compris les dialogues entre les protagonistes participant, la localisation, les principales actions et l'ambiance.
+A replacement text must accompany any video or audio sequence. It is also necessary to provide a transcription for any video or audio sequence, and to ensure that the videos have captions, either open or closed, for online videos, or embedded directly into the video file.
 
-Il est également possible de proposer une audiodescription, c'est à dire une piste sonore supplémentaire ajouté à la vidéo qui décrive les éléments visuels&nbsp;: les actions, les mouvements, les expressions, les décors, etc. entre les dialogues et les éléments sonores importants.
+The role of transcription is to provide a relevant alternative to multimedia content. Readers must have access to all the information conveyed by the video or audio file, including the dialogues between the participating protagonists, the location, the main actions and the atmosphere.
 
-La transcription peut être proposée en annexe ou dans un fichier téléchargeable stocké sur un serveur et accessible via un lien situé à proximité de l’objet (même chose pour l’audiodescription). L’intitulé du lien doit permettre d’identifier clairement que l’audiodescription ou la transcription proposées concernent la vidéo située dans l’objet car il n’est pas possible d’établir de relation sémantique entre les deux.
+It is also possible to propose an audiodescription, i.e. an additional soundtrack added to the video that describes the visual elements: actions, movements, expressions, sets, etc. in the blank spaces between the dialogues and the important sound elements.
 
-
-## Créer des tableaux accessibles
-
-### Introduction
-
-Les tableaux constituent un environnement complexe pour les utilisateurs de technologies d’assistance car l'organisation des informations et les relations entre elles ne peuvent pas être perçues rapidement et de manière globale. Il est nécessaire de faire en sorte que chaque cellule de contenu du tableau puisse être reliée correctement à la ou les cellules d'en-têtes qui en donnent le sens.
-
-### Tableaux de mise en forme
-
-L'utilisation des tableaux à des fins de mise en page n'est en général pas une bonne pratique&nbsp;: il est préférable d’utiliser les fonctions de mise en page (colonnes, bordures, etc.).
-Toutefois, certains logiciels permettent de distinguer entre les tableaux de mise en forme et les tableaux de données. Pour les tableaux de mise en forme, il est impératif de présenter les informations dans un ordre logique (en français&nbsp;: de gauche à droite et de haut en bas) pour s’assurer qu’il a du sens et pour ne pas égarer l’utilisateur.
-
-### Tableaux de données
-
-L'utilisation de la touche tabulation et la barre d'espace pour simuler des tableaux de données est à éviter car les technologies d’assistance ne sont pas en mesure d'interpréter ce type de formatage. Pour insérer un tableau de données, il faut passer par les fonctionnalités appropriées proposées par les logiciels, en respectant les recommandations suivantes&nbsp;:
-
-#### Formatage
-
-Si un tableau de données s’avère la meilleure option pour restituer l’information, il est nécessaire de respecter des règles de formatage pour que les données présentées soient accessibles et compréhensibles au plus grand nombre&nbsp;:
-
-* Créer un tableau uniforme facilitant l’identification de chaque cellule et sa signification dans le contexte&nbsp;;
-* Préférer plusieurs tableaux simples à des tableaux plus complexes&nbsp;;
-* Éviter d’imbriquer les tableaux les uns dans les autres&nbsp;;
-* Dans la mesure du possible éviter de fusionner des cellules&nbsp;;
-* Éliminer les cellules vides – si une donnée est absente, la remplacer par une mention explicite&nbsp;;
-* Générer des lignes blanches à l’aide des styles et non pas en insérant des lignes vides&nbsp;;
-* Éviter d’insérer des images au sein du tableau.
-
-#### En-têtes de lignes et de colonnes
-
-Il convient ensuite d’identifier le contenu du tableau par le biais des en-têtes, de la légende, et du texte alternatif, et de définir ces propriétés pour permettre une meilleure restitution par les lecteurs d’écran.
-
-Les en-têtes des lignes et des colonnes donnent un sens à la relation entre les données présentées.
-
-À noter&nbsp;: Les intitulés des en-têtes doivent être clairs et concis.
+The transcription can be proposed as an appendix or in a downloadable file stored on a server and accessible via a link located near the object (same for audio description). The link text must clearly identify the proposed audio description or transcription for the video, because it is not possible to establish a semantic relationship between the two.
 
 
-#### Légende et alternatives textuelles
-
-Une légende de tableau permet de présenter la fonction du tableau et la manière dont il est organisé. Toutes les abréviations utilisées au sein du tableau doivent être explicitées dans la légende.
-
-Une alternative textuelle est nécessaire pour présenter au plus juste la fonction d’un tableau de données complexe dans le contexte où il se trouve. Souvent une description détaillée présentant les faits saillants ou une synthèse des données présentées dans le tableau est nécessaire.
-
-### Copier-coller des tableaux depuis un classeur Excel
-
-Lorsqu’on insère un tableau dans un document à partir d'un autre document, il est nécessaire de veiller à ce que celui-ci soit bien copié sous la forme d'un tableau et non sous celle d'une image qui ne pourra alors plus permettre aux technologies d'assistance de naviguer à l'intérieur du contenu.
-
-
-## Créer des aides à la navigation
+## Creating accessible tables
 
 ### Introduction
 
-La consultation d'un document ne doit pas obligatoirement se faire de manière linéaire. À condition que le document soit bien structuré, avec l’application correcte de titres, de légendes, de notes de bas de page, etc., une structure hypertexte peut être générée automatiquement permettant aux utilisateurs de se déplacer rapidement à l’intérieur du document.
+Tables constitute a complex environment for users of assistive technologies because the organization of information and the relationships between them can't be perceived and scanned quickly. It is necessary to ensure that each data cell in the table can be correctly linked to the header cell(s) that make it meaningful.
 
-En complément des éléments de structuration décrits dans les parties précédentes, et des tables des matières/illustrations/tableaux qui peuvent en être générées, il est possible d’enrichir le document avec des éléments de navigation pointant vers des contenus à l’intérieur et à l’extérieur du document.
+### Layout tables
+
+The use of tables for layout purposes is generally not a good practice: it is preferable to use the layout functions (columns, borders, etc.).
+However, some assistive technologies make it possible to differentiate layout and data tables. For layout tables, it is imperative to present the information in a logical order (in Western languages, from left to right and from top to bottom) to make sure it makes sense and not to mislead the user.
+
+### Data Tables
+
+The use of the tab key and the space bar to simulate data  is to be avoided because assistive technologies are not able to interpret this type of formatting. To insert a data table, you need to go through the appropriate functionality offered by the application, while adhering to the following recommendations
+
+#### Formatting
+
+If a data table appears to be the best option for presenting information, formatting rules must be followed to ensure that the data is accessible and understandable to the largest number of users.
+
+* Create a uniform table that facilitates the identification of each cell and its meaning in context;
+* Prefer multiple simple tables to more complex tables;
+* Avoid nesting tables in one another;
+* As far as possible, avoid merging cells;
+* Eliminate empty cells - if data is missing, replace it with an explicit mention;
+* Make blank lines by using styles, and not by inserting empty rows;
+* Avoid inserting images within the table.
+
+#### Row and column headers
+
+It is then necessary to identify the contents of the table by means of the headers, the caption, and the alternative text, and to define these properties in order to allow a better rendering by the screen readers.
+
+The row and column headers give meaning to the relationship between the data presented.
+
+Note: Header cells content should be clear and concise.
 
 
-### Tables des matières, des illustrations et des tableaux
+#### Caption and text alternatives
 
-La table des matières ne doit pas être générée manuellement&nbsp;: il convient d'utiliser les fonctionnalités proposés par les outils pour le faire.
+A table caption describes the function of the table and how it is organized. All abbreviations used within the table must be explained in the caption.
 
-### Signets
+A text alternative is necessary to describe the function of a complex data table in the context in which it is located. Oftentimes, a detailed description of the most remarkable information, or a summary of the data presented in the table, is necessary.
 
-Un signet permet d’identifier un emplacement ou une sélection de texte qui peut être référencé ailleurs dans le document. Plutôt que faire défiler le document pour retrouver le texte, l’utilisateur peut y accéder facilement à l'aide d'outils listant les signets.
+### Copying and pasting tables from spreadsheets
 
-### Renvois
+When inserting a table into a document from another document, it is necessary to ensure that it is copied as an actual table, and not as an image, whose content eventually can't be accessed through assistive technologies.
 
-Les renvois permettent aux utilisateurs d'accéder directement à des passages de texte ou à des objets dans un document. Les renvois se composent d'une cible et d'une référence.
 
-### Liens
+## Creating navigation aids
 
-L’usage de liens permet aux utilisateurs de circuler au sein du document et de naviguer vers des ressources externes le cas échéant. Il convient d’utiliser des intitulés explicites qui rendent les liens compréhensibles dans leur contexte, c'est à dire la phrase ou le paragraphe où ils se situent.
+### Introduction
+
+A document is not necessarily read in a linear manner. Provided that the document is well structured, with proper application of headings, captions, footnotes, etc., a hypertext structure can be generated automatically, allowing users to move quickly within the document.
+
+In addition to the structuring elements described in the previous sections, and tables of contents, of figures or of tables, that can be generated automatically, it is possible to enrich the document with navigation elements pointing to contents inside and outside the document.
+
+
+### Tables of contents, figures and tables
+
+The table of contents must not be generated manually: the features provided by the authoring tools must be used to do so.
+
+### Bookmarks
+
+A bookmark is used to identify a location or a selection of text that can be referenced elsewhere in the document. Rather than browsing through the document to retrieve the text, the user can easily access the text using tools that list bookmarks.
+
+### Cross-reference
+
+Cross-references allow users to directly access to passages of text or objects in a document. Cross-references consist of a target and a reference.
+
+### Links
+
+Links allow users to navigate within the document, and to external resources where appropriate. Explicit text should be used to make links understandable in context, i.e., the sentence or paragraph in which they are located.
 
 ### Citations
 
-Lorsque c'est possible, il est recommandé d'associer des citations à des références bibliographiques de manière cohérente et accessible aux technologies d’assistance&nbsp;: cela permet aux utilisateurs d'accéder facilement à la référence bibliographique liée à un passage du texte.
+Whenever possible, it is recommended to associate citations with bibliographic references in a consistent way, that is also accessible to assistive technologies: this allows users to easily access the bibliographic references related to a passage of the text.
 
-## Créer des formulaires accessibles
+## Creating accessible forms
 
-Un formulaire est un espace de saisie, pouvant comporter plusieurs «&nbsp;champs&nbsp;» où l’on peut renseigner du texte, cocher des cases, effectuer un choix dans une liste de termes prédéfinis, appuyer sur des boutons, etc.
+A form is an input space, which can have several "fields" where the user can enter text, check boxes, select from a list of predefined terms, press buttons, and so on.
 
-Les formulaires bien conçus seront accessibles aux personnes navigantes à l'aide de technologies d'assistance à condition qu'ils respectent quelques règles simples&nbsp;:
+Well-designed forms will be accessible to users of assistive technology, provided they follow a few simple rules:
 
-* Le cheminement (ordre de tabulation) doit être logique et compréhensible&nbsp;;
-* Chaque champ de formulaire doit être identifié&nbsp;;
-* Les champs du formulaire doivent être éditables&nbsp;;
-* Les informations de même nature doivent être regroupées et signalées clairement&nbsp;;
-* Si possible, les informations de même nature doivent être regroupées&nbsp;;
-* Pour des formulaires complexes, une brève description permettant de connaître le nombre de questions ou de sections et une estimation du temps nécessaire pour renseigner le formulaire peut éventuellement être proposée.
-
-
-## Définir les propriétés du document
+* The focus path (tab order) must be logical and understandable;
+* Each form field must be identified;
+* Form fields must be editable;
+* Information of the same nature should be grouped and labelled clearly;
+* For complex forms, a short description, providing the number of questions or sections, and an estimate of the time required to complete the form, may be proposed.
 
 
-Les propriétés de document, également appelées les métadonnées, sont des informations relatives à un fichier qui le décrivent ou l’identifient. Elles comprennent des informations comme le titre, le nom de l’auteur, l’objet et les mots clés identifiant les rubriques ou le contenu du document.
+## Setting document properties
 
-À l'ouverture d'un document, certaines technologies d'assistance se réfèrent à ces propriétés pour annoncer le titre du document et pour résumer le contenu.
 
-Ces propriétés sont également conservées et exploitées lorsque le document est publié dans un autre format.
+Document properties, also known as metadata, are information about a file that describes or identifies it. They include information such as title, author's name, subject, and keywords identifying the topics or content of the document.
 
-Il est nécessaire d'indiquer au moins le titre du document, et éventuellement l'auteur, des mots-clés et une mention concernant l'accessibilité lorsque c'est possible.
+When opening a document, some assistive technologies refer to these properties to announce the title of the document and to summarize the content.
 
-## Rendre accessibles les présentations orales
+These properties are also preserved and used when the document is published in another format.
 
-Des diapositives (PowerPoint ou Impress) peuvent être utilisées de manière autonome, mais sont souvent utilisées pour soutenir une présentation orale avec de l’information visuelle.
+It is necessary to indicate at least the title of the document, and possibly the author, keywords and a statement about the document's accessibility where possible.
 
-Pour créer des présentations accessibles à tous, indépendamment des capacités ou des limitations des auditeurs, il est impératif que toute information visuelle qui apporte du sens à la présentation orale soit décrite pour que les personnes qui ne parviennent pas à consulter l’écran aient accès à cette même information. En aucun cas la diapositive ne doit remplacer le discours oral.
+## Making oral presentations accessible
 
-Pour rendre les informations présentées accessibles et compréhensibles au plus grand nombre&nbsp;:
+Slides (PowerPoint or Impress) can be used independently, but are often used to support an oral presentation with visual information.
 
-* Si possible, distribuez une copie électronique de vos diapositives à l’avance pour que les auditeurs aient la possibilité de consulter l’information présentée à l’écran sur leurs ordinateurs portables. Certains participants bénéficieront aussi d’une version imprimée en texte agrandi&nbsp;;
-* Exprimez-vous de manière claire et précise, sans accélération du débit de parole&nbsp;;
-* Commencez en vous présentant et en annonçant le format de la présentation (le temps alloué, le déroulé, quand les auditeurs pourront poser leurs questions, etc.). Si vous êtes d’accord pour que les auditeurs vous interrompent pour solliciter une explication en cas d’incompréhension, faites le savoir&nbsp;;
-* Faites en sorte que tout texte présenté à l’écran soit annoncé verbalement. Et n’oubliez pas de vous limiter à entre 3 et 7 phrases par diapositive&nbsp;;
-* Expliquez tout graphique ou diagramme en explicitant l'information que vous souhaitez transmettre en le présentant&nbsp;;
-* Décrivez, plutôt que montrer du doigt, l’endroit sur la diapositive où se situe l’information à laquelle vous faites référence&nbsp;;
-* Si quelqu’un vous pose une question, répétez la question avant d’y répondre.
+To create presentations that are accessible to all, regardless of the capabilities of the audience, it is imperative that any visual information that makes sense for the oral presentation is described so that people who can't see the projection have access to the same information. In no case should the slide replace speech.
 
-## Vérifier l’accessibilité
+To make the presented information accessible and understandable to the largest audience:
 
-Certains outils intègrent un vérificateur d’accessibilité. Le vérificateur d’accessibilité permet d’identifier les contenus susceptibles de poser des problèmes  de lecture pour des personnes naviguant à l’aide de technologies d’assistance.
+* If possible, distribute a digital version of your slides in advance, so that the audience can see the information on the screen of their laptops. Some participants will also benefit from a printed version in enlarged text;
+* Express yourself clearly and accurately, at a reasonable speech rate;
+* Begin by introducing yourself and announcing the format of the presentation (the allotted time, the outline, when the audience can ask their questions, etc.). If you agree that audience will interrupt you to solicit an explanation in case of misunderstanding, let it be known;
+* Make sure that any text on the screen is announced verbally. And do not forget to limit yourself to between 3 and 7 sentences per slide;
+* Explain any graph or diagram by stating the information you want to convey by presenting it;
+* Describe, instead of pointing the finger, where on the slide the information you are referring to is located;
+* If someone asks a question, repeat the question before answering it.
 
-Les vérificateurs permettent de détecter certains problèmes tels que l'absence d'alternatives aux images ou l'incohérence du titrage du document. Toutefois, il est à noter que l'utilisation de ces vérificateurs ne dispense pas d'un contrôle manuel, car la conformité aux critères d'accessibilité ne peut être vérifiée automatiquement que pour une proportion faible des critères.
+## Checking accessibility
 
-## Publier le document dans d’autres formats
+Some tools include an accessibility checker. The accessibility checker identifies content that can cause reading issues for people accessing the document with assistive technologies.
 
-Si les techniques décrites dans ce guide sont utilisées lors de la création d’un document électronique, le dit document pourra non seulement être lu par des utilisateurs de technologies d’assistance des logiciels utilisés pour la création, mais sa composition sémantique lui permettra également une meilleure conversion dans d’autres formats, même si quelques ajustements peuvent néanmoins être nécessaires selon le format choisi.
+Checkers detect issues like the absence of alternatives to images or the inconsistency of document headings. However, it should be noted that the use of these checkers does not exempt manual control, as compliance with the accessibility criteria can only be verified automatically for a small proportion of the criteria.
 
-Dans ces guides, la publication est abordée pour les formats suivants&nbsp;:
+## Publishing the document in other formats
 
-* Format <abbr title="Hypertext Markup Language">HTML</abbr>&nbsp;;
-* Format <abbr title="Portable Document Format">PDF</abbr>.
+If the techniques described in this guide are used during the creation of an electronic document, this document will not only be read by users of assistive technologies for the software used for creation, but its semantic composition will also allow for better conversion into other formats, although some adjustments may still be necessary depending on the chosen format.
 
-La conversion vers ces formats suppose que les documents soient correctement structurés en amont en suivant les conseils décrits dans les chapitres précédents de ce guide.
+In these guides, the publication process is described for the following formats:
 
-Il est nécessaire de s'assurer que les éléments liés à l'accessibilité du document soient conservés lors de l'enregistrement ou l'export vers d'autres formats. Ce travail d’évaluation et d’éventuelles corrections dues à la perte d’information ou d’erreurs de conversion est abordé en détail pour l'export au format PDF dans le guide sur Adobe Acrobat Pro DC. Pour l'export en HTML, il est nécessaire d'utiliser des techniques de vérifications propres à ce langage qui ne sont pas abordées dans ces guides.
+* <abbr title="Hypertext Markup Language">HTML</abbr>;
+* <abbr title="Portable Document Format">PDF</abbr>.
+
+Conversion to these formats assumes that documents are properly structured upstream, by following the guidelines described in the previous chapters of this guide.
+
+It is necessary to ensure that the elements related to the accessibility of the document are preserved when saving or exporting to other formats. This evaluation work and any corrections due to loss of information or conversion errors are discussed in detail in the Adobe Acrobat Pro DC guide. For HTML export, it is necessary to use verification techniques specific to this language that are not covered in these guides.
 
 ## Licence
 
-Ce document est la propriété du Secrétariat général à la modernisation de l'action publique français (SGMAP). Il est placé sous la [licence ouverte 1.0 ou ultérieure](http://wiki.data.gouv.fr/wiki/Licence_Ouverte_/_Open_Licence), équivalente à une licence <i lang="en">Creative Commons BY</i>. Pour indiquer la paternité, ajouter un lien vers la version originale du document disponible sur le [compte <span lang="en">Github</span> de la DInSIC](https://github.com/DISIC).
+This document is the property of the <span lang="fr">Secrétariat général à la modernisation de l'action publique</span> (SGMAP). It is placed under [Open Licence 1.0 or later (PDF, 541 kb)](http://ddata.over-blog.com/xxxyyy/4/37/99/26/licence/Licence-Ouverte-Open-Licence-ENG.pdf), equivalent to a Creative Commons BY licence. To indicate authorship, add a link to the original version of the document available on the [DINSIC's GitHub account](https://github.com/DISIC).
