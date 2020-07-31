@@ -1,4 +1,4 @@
-# Créer des documents bureautiques accessibles
+# Créer des documents bureautiques accessibles
 
 ## Sommaire
 
@@ -114,7 +114,7 @@ Un document est accessible s’il peut être consulté par n’importe quel util
 
 Les contenus et les applications doivent être compatibles avec ces diverses technologies d'assistance, leurs fonctionnalités et leurs usages.
 
-## Bien structurer un document
+## Bien structurer un document
 
 ### Introduction
 
@@ -181,11 +181,11 @@ Il faut prendre quelques précautions pour que l’ordre de lecture soit cohére
 * Ne pas utiliser les touches de tabulation pour créer des colonnes&nbsp;;
 * Ne pas utiliser des zones de texte éditables pour mettre en valeur certains contenus, mais plutôt des styles.
 
-### Zones de texte
+### Zones de texte
 
 Les zones de texte posent souvent problème car elles peuvent être ignorées par certains lecteurs d’écran. Pour cette raison, il est préférable de créer un encadré en appliquant un style.
 
-### Masque de diapositives
+### Masque de diapositives
 
 Lorsqu'on créé des diapositives, il est utile de créer un masque de diapositive, qui représente la diapositive «&nbsp;maîtresse&nbsp;» qui stocke toutes les informations relatives à la mise en page, y compris la taille et le positionnement des zones de contenu. Les styles de chaque nouvelle diapositive sont hérités de ce masque.
 
@@ -197,7 +197,7 @@ Il est préférable de créer un masque de diapositives avant de commencer à cr
 
 Les en-têtes et pieds de page ne sont pas lus automatiquement par les lecteurs d’écran. Pour cette raison, il faut éviter de mettre des informations importantes dans ces zones.
 
-## Utiliser une présentation appropriée
+## Utiliser une présentation appropriée
 
 ### Introduction
 
@@ -250,7 +250,7 @@ Un modèle sert de base aux nouveaux documents et contient des styles de formata
 
 Il est possible de créer son propre modèle accessible à partir d'un contenu vierge, ou d'éditer et de modifier des modèles préexistants pour prendre en compte les recommandations d'accessibilité.
 
-## Langue et langage
+## Langue et langage
 
 ### Introduction
 
@@ -339,7 +339,7 @@ Il est également possible de proposer une audiodescription, c'est à dire une p
 La transcription peut être proposée en annexe ou dans un fichier téléchargeable stocké sur un serveur et accessible via un lien situé à proximité de l’objet (même chose pour l’audiodescription). L’intitulé du lien doit permettre d’identifier clairement que l’audiodescription ou la transcription proposées concernent la vidéo située dans l’objet car il n’est pas possible d’établir de relation sémantique entre les deux.
 
 
-## Créer des tableaux accessibles
+## Créer des tableaux accessibles
 
 ### Introduction
 
@@ -415,7 +415,7 @@ L’usage de liens permet aux utilisateurs de circuler au sein du document et de
 
 Lorsque c'est possible, il est recommandé d'associer des citations à des références bibliographiques de manière cohérente et accessible aux technologies d’assistance&nbsp;: cela permet aux utilisateurs d'accéder facilement à la référence bibliographique liée à un passage du texte.
 
-## Créer des formulaires accessibles
+## Créer des formulaires accessibles
 
 Un formulaire est un espace de saisie, pouvant comporter plusieurs «&nbsp;champs&nbsp;» où l’on peut renseigner du texte, cocher des cases, effectuer un choix dans une liste de termes prédéfinis, appuyer sur des boutons, etc.
 
@@ -429,7 +429,7 @@ Les formulaires bien conçus seront accessibles aux personnes navigantes à l'ai
 * Pour des formulaires complexes, une brève description permettant de connaître le nombre de questions ou de sections et une estimation du temps nécessaire pour renseigner le formulaire peut éventuellement être proposée.
 
 
-## Définir les propriétés du document
+## Définir les propriétés du document
 
 
 Les propriétés de document, également appelées les métadonnées, sont des informations relatives à un fichier qui le décrivent ou l’identifient. Elles comprennent des informations comme le titre, le nom de l’auteur, l’objet et les mots clés identifiant les rubriques ou le contenu du document.
@@ -456,13 +456,13 @@ Pour rendre les informations présentées accessibles et compréhensibles au plu
 * Décrivez, plutôt que montrer du doigt, l’endroit sur la diapositive où se situe l’information à laquelle vous faites référence&nbsp;;
 * Si quelqu’un vous pose une question, répétez la question avant d’y répondre.
 
-## Vérifier l’accessibilité
+## Vérifier l’accessibilité
 
 Certains outils intègrent un vérificateur d’accessibilité. Le vérificateur d’accessibilité permet d’identifier les contenus susceptibles de poser des problèmes  de lecture pour des personnes naviguant à l’aide de technologies d’assistance.
 
 Les vérificateurs permettent de détecter certains problèmes tels que l'absence d'alternatives aux images ou l'incohérence du titrage du document. Toutefois, il est à noter que l'utilisation de ces vérificateurs ne dispense pas d'un contrôle manuel, car la conformité aux critères d'accessibilité ne peut être vérifiée automatiquement que pour une proportion faible des critères.
 
-## Publier le document dans d’autres formats
+## Publier le document dans d’autres formats
 
 Si les techniques décrites dans ce guide sont utilisées lors de la création d’un document électronique, le dit document pourra non seulement être lu par des utilisateurs de technologies d’assistance des logiciels utilisés pour la création, mais sa composition sémantique lui permettra également une meilleure conversion dans d’autres formats, même si quelques ajustements peuvent néanmoins être nécessaires selon le format choisi.
 
